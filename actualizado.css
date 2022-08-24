@@ -194,7 +194,7 @@ h2 {
   /* grosor ind mensual*/
   .pie {
     text-transform: uppercase;
-    flex-direction: column;
+    text-align: center;
     --p:20;
     /*grosor*/
     --b:18px;
