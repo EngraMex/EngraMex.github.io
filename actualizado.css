@@ -199,7 +199,7 @@ h2 {
     /*grosor*/
     --b:18px;
     /*cicunferencia*/
-    --w:150px;
+    --w:190px;
     
     width:var(--w);
     aspect-ratio:1;
@@ -208,7 +208,7 @@ h2 {
     margin:2px;
     place-content:center;
     /*letra*/
-    font-size: 20px;
+    font-size:25px;
     font-weight:bold;
     font-family: Arial, Helvetica, sans-serif;
   }
@@ -253,22 +253,23 @@ h2 {
   .tableizer-table{
     text-align: left;
     margin-left: 1rem;
-    width: 85%;
+    width: 82%;
     border-spacing: .5rem;
     background-color: #111;
   }
 
 .nav-ajusted{
-  max-width: 1200px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .nav-ajusted_table{
-  max-width: 992px;
-  margin: -18rem 10px;
+  max-width: 1200px;
+  margin-top: -17rem;
 }
 
 .nav-ajusted_mensual{
-  max-width: 768px;
-  margin-top: -15rem;
+  max-width: 992px;
+  margin-top: -5rem;
   margin-left: 75rem;
 }
