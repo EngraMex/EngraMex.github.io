@@ -253,7 +253,7 @@ h2 {
   .tableizer-table{
     text-align: left;
     margin-left: 1rem;
-    width: 80%;
+    width: 82%;
     border-spacing: .5rem;
     background-color: #111;
   }
@@ -271,5 +271,5 @@ h2 {
 .nav-ajusted_mensual{
   max-width: 992px;
   margin-top: -5rem;
-  margin-left: 72rem;
+  margin-left: 75rem;
 }
