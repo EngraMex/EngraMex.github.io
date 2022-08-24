@@ -253,14 +253,15 @@ h2 {
   .tableizer-table{
     text-align: left;
     margin-left: 1rem;
-    width: 75%;
-    border-spacing: .2rem;
+    width: 82%;
+    border-spacing: .5rem;
     background-color: #111;
   }
 
 .nav-ajusted{
-  max-width: 1200px;
+  max-width: 1400px;
   margin-top: -0.5rem;
+  margin: 0 auto;
   margin-bottom: -1rem;
 }
 
@@ -271,6 +272,6 @@ h2 {
 
 .nav-ajusted_mensual{
   max-width: 992px;
-  margin-left: 60rem;
+  margin-left: 75rem;
   margin-top: -14rem;
 }
