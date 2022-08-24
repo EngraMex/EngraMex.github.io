@@ -194,12 +194,12 @@ h2 {
   /* grosor ind mensual*/
   .pie {
     text-transform: uppercase;
-    text-align: center;
+    flex-direction: column;
     --p:20;
     /*grosor*/
     --b:18px;
     /*cicunferencia*/
-    --w:190px;
+    --w:170px;
     
     width:var(--w);
     aspect-ratio:1;
@@ -253,7 +253,7 @@ h2 {
   .tableizer-table{
     text-align: left;
     margin-left: 1rem;
-    width: 75%;
+    width: 85%;
     border-spacing: .5rem;
     background-color: #111;
   }
@@ -263,12 +263,12 @@ h2 {
 }
 
 .nav-ajusted_table{
-  max-width: 768px;
-  margin: -20rem auto;
+  max-width: 1100px;
+  margin: -18rem 10px;
 }
 
 .nav-ajusted_mensual{
-  max-width: 768px;
+  max-width: 992px;
   margin-top: -15rem;
-  margin-left: 60rem;
+  margin-left: 75rem;
 }
