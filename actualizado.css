@@ -264,7 +264,7 @@ h2 {
 
 .nav-ajusted_table{
   max-width: 768px;
-  margin: -20rem;
+  margin: -20rem auto;
 }
 
 .nav-ajusted_mensual{
