@@ -1,6 +1,7 @@
 body {
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   background: #111;
+  margin: 0 0;
 }
 
 h1 {
@@ -233,8 +234,6 @@ h2 {
   .animate {
     animation:p 1s .5s both;
     color:#eee;
-    margin-left: 1250px;
-    margin-top: -5em;
   }
   @keyframes p {
     from{--p:0}
@@ -257,8 +256,20 @@ h2 {
     width: 82%;
     border-spacing: .5rem;
     background-color: #111;
-    margin-top: -15rem;
   }
 
+.nav-ajusted{
+  max-width: 1400px;
+  margin: 0 auto;
+}
 
+.nav-ajusted_table{
+  max-width: 1200px;
+  margin-top: -17rem;
+}
 
+.nav-ajusted_mensual{
+  max-width: 992px;
+  margin-top: -5rem;
+  margin-left: 75rem;
+}
