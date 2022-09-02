@@ -199,7 +199,7 @@ h2 {
     /*grosor*/
     --b:18px;
     /*cicunferencia*/
-    --w:150px;
+    --w:160px;
     
     width:var(--w);
     aspect-ratio:1;
