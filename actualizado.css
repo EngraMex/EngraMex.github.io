@@ -62,72 +62,47 @@ h2 {
 }
 
 .ayer {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   position: relative;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, yellow), color-stop(50%, rgba(255, 255, 0, 0.2)));
-  background: linear-gradient(0deg, yellow 50%, rgba(255, 255, 0, 0.2) 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(0, 128, 0, 0.2)));
+  background: linear-gradient(0deg, green 50%, rgba(0, 128, 0, 0.2) 50%);
 }
 .ayer:before, .ayer:after {
-  color: yellow;
+  color: green;
 }
 .ayer:before {
-  content: "2";
+  content: "4";
   background: #111 content-box;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 .ayer:after {
-  content: "06/09/2022";
-  text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #111));
-  background: linear-gradient(transparent 50%, #111 50%);
-  -webkit-transform: scale(1.1) rotate(-90deg);
-          transform: scale(1.1) rotate(-90deg);
-}
-
-.hoy {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  position: relative;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
-  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
-}
-.hoy:before, .hoy:after {
-  color: red;
-}
-.hoy:before {
-  content: "1";
-  background: #111 content-box;
-  -webkit-transform: rotate(-45deg);
-          transform: rotate(-45deg);
-}
-.hoy:after {
   content: "07/09/2022";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #111));
   background: linear-gradient(transparent 50%, #111 50%);
-  -webkit-transform: scale(1.1) rotate(-45deg);
-          transform: scale(1.1) rotate(-45deg);
+  -webkit-transform: scale(1.1) rotate(-180deg);
+          transform: scale(1.1) rotate(-180deg);
 }
 
-.manana {
+.hoy {
   -webkit-transform: rotate(120.06deg);
           transform: rotate(120.06deg);
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, yellow), color-stop(50%, rgba(255, 255, 0, 0.2)));
   background: linear-gradient(0deg, yellow 50%, rgba(255, 255, 0, 0.2) 50%);
 }
-.manana:before, .manana:after {
+.hoy:before, .hoy:after {
   color: yellow;
 }
-.manana:before {
+.hoy:before {
   content: "2";
   background: #111 content-box;
   -webkit-transform: rotate(-120.06deg);
           transform: rotate(-120.06deg);
 }
-.manana:after {
+.hoy:after {
   content: "08/09/2022";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #111));
@@ -136,34 +111,59 @@ h2 {
           transform: scale(1.1) rotate(-120.06deg);
 }
 
-.pasado {
-  -webkit-transform: rotate(72deg);
-          transform: rotate(72deg);
+.manana {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, yellow), color-stop(50%, rgba(255, 255, 0, 0.2)));
   background: linear-gradient(0deg, yellow 50%, rgba(255, 255, 0, 0.2) 50%);
 }
-.pasado:before, .pasado:after {
+.manana:before, .manana:after {
   color: yellow;
 }
-.pasado:before {
-  content: "2";
+.manana:before {
+  content: "3";
   background: #111 content-box;
-  -webkit-transform: rotate(-72deg);
-          transform: rotate(-72deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
-.pasado:after {
-  content: "09/09/2022";
+.manana:after {
+  content: "08/09/2022";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #111));
   background: linear-gradient(transparent 50%, #111 50%);
-  -webkit-transform: scale(1.1) rotate(-72deg);
-          transform: scale(1.1) rotate(-72deg);
+  -webkit-transform: scale(1.1) rotate(-90deg);
+          transform: scale(1.1) rotate(-90deg);
+}
+
+.pasado {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
+}
+.pasado:before, .pasado:after {
+  color: red;
+}
+.pasado:before {
+  content: "0";
+  background: #111 content-box;
+  -webkit-transform: rotate(-0deg);
+          transform: rotate(-0deg);
+}
+.pasado:after {
+  content: "12/09/2022";
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #111));
+  background: linear-gradient(transparent 50%, #111 50%);
+  -webkit-transform: scale(1.1) rotate(-0deg);
+          transform: scale(1.1) rotate(-0deg);
 }
 
 .pasadop {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
   background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
@@ -172,18 +172,18 @@ h2 {
   color: red;
 }
 .pasadop:before {
-  content: "0";
+  content: "1";
   background: #111 content-box;
-  -webkit-transform: rotate(-0deg);
-          transform: rotate(-0deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .pasadop:after {
   content: "12/09/2022";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #111));
   background: linear-gradient(transparent 50%, #111 50%);
-  -webkit-transform: scale(1.1) rotate(-0deg);
-          transform: scale(1.1) rotate(-0deg);
+  -webkit-transform: scale(1.1) rotate(-45deg);
+          transform: scale(1.1) rotate(-45deg);
 }
 
 @property --p{
