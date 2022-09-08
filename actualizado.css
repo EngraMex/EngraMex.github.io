@@ -128,7 +128,7 @@ h2 {
           transform: rotate(-90deg);
 }
 .manana:after {
-  content: "08/09/2022";
+  content: "09/09/2022";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #111));
   background: linear-gradient(transparent 50%, #111 50%);
