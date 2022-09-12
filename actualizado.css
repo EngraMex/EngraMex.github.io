@@ -1,10 +1,10 @@
-/*  rgba(7, 123, 240, 0.542) 50%)
+/*  rgba(7, 123, 240, 0.542) 50%
     rgb(7, 233, 240)
 */
 
 body {
   font-family: sans-serif;
-  background: rgba(7, 123, 240, 0.542) 50%;
+  background: rgba(7, 123, 240, 0.542);
   margin: 0 0;
 }
 
