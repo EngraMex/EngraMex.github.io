@@ -73,7 +73,7 @@ h2 {
 }
 .ayer:before {
   content: "4";
-  background: #111 content-box;
+  background: #eee content-box;
   -webkit-transform: rotate(-120.06deg);
           transform: rotate(-120.06deg);
 }
@@ -233,7 +233,7 @@ h2 {
   }
   .animate {
     animation:p 1s .5s both;
-    color:#eee;
+    color:#111;
   }
   @keyframes p {
     from{--p:0}
