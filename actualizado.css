@@ -170,7 +170,7 @@ h2 {
           transform: rotate(59.94deg);
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
-  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2));
 }
 .pasadop:before, .pasadop:after {
   color: red;
