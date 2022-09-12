@@ -84,8 +84,8 @@ h2 {
 .ayer:after {
   content: "09/09/2022";
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542)));
-  background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542) 50%));
+  background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542) 50%);
   -webkit-transform: scale(1.1) rotate(-120.06deg);
           transform: scale(1.1) rotate(-120.06deg);
 }
@@ -109,8 +109,8 @@ h2 {
 .hoy:after {
   content: "12/09/2022";
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542)));
-  background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542) 50%));
+  background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542) 50%);
   -webkit-transform: scale(1.1) rotate(-0deg);
           transform: scale(1.1) rotate(-0deg);
 }
@@ -134,8 +134,8 @@ h2 {
 .manana:after {
   content: "13/09/2022";
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542)));
-  background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542) 50%));
+  background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542) 50%);
   -webkit-transform: scale(1.1) rotate(-90deg);
           transform: scale(1.1) rotate(-90deg);
 }
@@ -159,8 +159,8 @@ h2 {
 .pasado:after {
   content: "14/09/2022";
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542)));
-  background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542) 50%));
+  background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542) 50%);
   -webkit-transform: scale(1.1) rotate(-90deg);
           transform: scale(1.1) rotate(-90deg);
 }
@@ -170,7 +170,7 @@ h2 {
           transform: rotate(59.94deg);
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
-  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .pasadop:before, .pasadop:after {
   color: red;
@@ -184,8 +184,8 @@ h2 {
 .pasadop:after {
   content: "15/09/2022";
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542)));
-  background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542) 50%));
+  background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542) 50%);
   -webkit-transform: scale(1.1) rotate(-59.94deg);
           transform: scale(1.1) rotate(-59.94deg);
 }
@@ -246,7 +246,7 @@ h2 {
     text-transform: uppercase;
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    background: rgba(7, 123, 240, 0.542);
+    background: rgba(7, 123, 240, 0.542) 50%;
     color: #111;
   }
   .tableizer-table td, td, th {
@@ -259,7 +259,7 @@ h2 {
     margin-left: 1rem;
     width: 82%;
     border-spacing: .5rem;
-    background-color: rgba(7, 123, 240, 0.542);
+    background-color: rgba(7, 123, 240, 0.542) 50%;
   }
 
 .nav-ajusted{
