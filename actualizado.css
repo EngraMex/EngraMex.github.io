@@ -177,7 +177,7 @@ h2 {
 }
 .pasadop:before {
   content: "1";
-  background: rgba(7, 123, 240, 0.542) 50% content-box;
+  background: rgba(7, 123, 240, 0.542) content-box;
   -webkit-transform: rotate(-59.94deg);
           transform: rotate(-59.94deg);
 }
