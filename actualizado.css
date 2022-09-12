@@ -242,7 +242,7 @@ h2 {
     text-transform: uppercase;
     font-size: 10px;
     font-family: Arial, Helvetica, sans-serif;
-    background: #eee;
+    background: rgb(7, 233, 240)ee;
     color: #111;
   }
   .tableizer-table td, td, th {
