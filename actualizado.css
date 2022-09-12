@@ -84,7 +84,7 @@ h2 {
 .ayer:after {
   content: "09/09/2022";
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542) 50%));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542)));
   background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542) 50%);
   -webkit-transform: scale(1.1) rotate(-120.06deg);
           transform: scale(1.1) rotate(-120.06deg);
@@ -109,7 +109,7 @@ h2 {
 .hoy:after {
   content: "12/09/2022";
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542) 50%));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542)));
   background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542) 50%);
   -webkit-transform: scale(1.1) rotate(-0deg);
           transform: scale(1.1) rotate(-0deg);
@@ -134,7 +134,7 @@ h2 {
 .manana:after {
   content: "13/09/2022";
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542) 50%));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542)));
   background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542) 50%);
   -webkit-transform: scale(1.1) rotate(-90deg);
           transform: scale(1.1) rotate(-90deg);
@@ -159,7 +159,7 @@ h2 {
 .pasado:after {
   content: "14/09/2022";
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542) 50%));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542)));
   background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542) 50%);
   -webkit-transform: scale(1.1) rotate(-90deg);
           transform: scale(1.1) rotate(-90deg);
@@ -184,7 +184,7 @@ h2 {
 .pasadop:after {
   content: "15/09/2022";
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542) 50%));
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, rgba(7, 123, 240, 0.542)));
   background: linear-gradient(transparent 50%, rgba(7, 123, 240, 0.542) 50%);
   -webkit-transform: scale(1.1) rotate(-59.94deg);
           transform: scale(1.1) rotate(-59.94deg);
