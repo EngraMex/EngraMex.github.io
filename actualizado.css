@@ -233,7 +233,7 @@ h2 {
   }
   .animate {
     animation:p 1s .5s both;
-    color:#eee;
+    color:#111;
   }
   @keyframes p {
     from{--p:0}
