@@ -4,7 +4,7 @@
 
 body {
   font-family: sans-serif;
-  background: steelblue;
+  background: #2C3E50;
   margin: 0 0;
 }
 
@@ -77,15 +77,15 @@ h2 {
 }
 .ayer:before {
   content: "1";
-  background: steelblue content-box;
+  background: #2C3E50 content-box;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
 .ayer:after {
   content: "12/09/2022";
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, steelblue));
-  background: linear-gradient(transparent 50%, steelblue 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
+  background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-180deg);
           transform: scale(1.1) rotate(-180deg);
 }
@@ -102,14 +102,14 @@ h2 {
 }
 .hoy:before {
   content: "2";
-  background: steelblue content-box;
+  background: #2C3E50 content-box;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
 .hoy:after {
   content: "13/09/2022";
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, steelblue));
-  background: linear-gradient(transparent 50%, steelblue 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
+  background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-90deg);
           transform: scale(1.1) rotate(-90deg);
 }
@@ -126,15 +126,15 @@ h2 {
 }
 .manana:before {
   content: "1";
-  background: steelblue content-box;
+  background: #2C3E50 content-box;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
 .manana:after {
   content: "13/09/2022";
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, steelblue));
-  background: linear-gradient(transparent 50%, steelblue 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
+  background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-90deg);
           transform: scale(1.1) rotate(-90deg);
 }
@@ -151,15 +151,15 @@ h2 {
 }
 .pasado:before {
   content: "1";
-  background: steelblue content-box;
+  background: #2C3E50 content-box;
   -webkit-transform: rotate(-59.94deg);
           transform: rotate(-59.94deg);
 }
 .pasado:after {
   content: "15/09/2022";
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, steelblue));
-  background: linear-gradient(transparent 50%, steelblue 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
+  background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-59.94deg);
           transform: scale(1.1) rotate(-59.94deg);
 }
@@ -176,15 +176,15 @@ h2 {
 }
 .pasadop:before {
   content: "0";
-  background: steelblue content-box;
+  background: #2C3E50 content-box;
   -webkit-transform: rotate(-0deg);
           transform: rotate(-0deg);
 }
 .pasadop:after {
   content: "16/09/2022";
   text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, steelblue));
-  background: linear-gradient(transparent 50%, steelblue 50%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
+  background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-0deg);
           transform: scale(1.1) rotate(-0deg);
 }
