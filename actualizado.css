@@ -1,15 +1,11 @@
-/*  rgba(7, 123, 240, 0.542) 50%
-    rgb(7, 233, 240)
-*/
-
 body {
-  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   background: #2C3E50;
-  margin: 0 0;
 }
 
 h1 {
-  text-transform: uppercase;
   text-align: center;
   color: green;
 }
@@ -28,7 +24,7 @@ h2 {
   -ms-flex-wrap: initial;
       flex-wrap: initial;
   box-flex: auto;
-  margin-top: -0.5rem;
+  margin-top: 2rem;
   margin-left: 0;
   margin-right: 0;
 }
@@ -47,8 +43,6 @@ h2 {
   left: 0;
   text-align: center;
 }
-
-/*grosor de arcos indicadores*/
 .circular-progress:before {
   padding: 1rem;
   -webkit-box-sizing: border-box;
@@ -57,8 +51,6 @@ h2 {
   font-size: 2rem;
   line-height: 150px;
 }
-
-/*fecha*/
 .circular-progress:after {
   text-align: center;
   font-size: 1.15rem;
@@ -76,13 +68,13 @@ h2 {
   color: green;
 }
 .ayer:before {
-  content: "1";
+  content: "3";
   background: #2C3E50 content-box;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
 .ayer:after {
-  content: "12/09/2022";
+  content: "13/9/2022";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
@@ -101,13 +93,14 @@ h2 {
   color: yellow;
 }
 .hoy:before {
-  content: "2";
+  content: "1";
   background: #2C3E50 content-box;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
 .hoy:after {
-  content: "13/09/2022";
+  content: "14/9/2022";
+  text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-90deg);
@@ -115,53 +108,53 @@ h2 {
 }
 
 .manana {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  position: relative;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, yellow), color-stop(50%, rgba(255, 255, 0, 0.2)));
-  background: linear-gradient(0deg, yellow 50%, rgba(255, 255, 0, 0.2)50%);
-}
-.manana:before, .manana:after {
-  color: yellow;
-}
-.manana:before {
-  content: "1";
-  background: #2C3E50 content-box;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-.manana:after {
-  content: "13/09/2022";
-  text-transform: uppercase;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
-  background: linear-gradient(transparent 50%, #2C3E50 50%);
-  -webkit-transform: scale(1.1) rotate(-90deg);
-          transform: scale(1.1) rotate(-90deg);
-}
-
-.pasado {
   -webkit-transform: rotate(59.94deg);
           transform: rotate(59.94deg);
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
   background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
 }
-.pasado:before, .pasado:after {
+.manana:before, .manana:after {
   color: red;
 }
-.pasado:before {
+.manana:before {
   content: "1";
   background: #2C3E50 content-box;
   -webkit-transform: rotate(-59.94deg);
           transform: rotate(-59.94deg);
 }
-.pasado:after {
-  content: "15/09/2022";
+.manana:after {
+  content: "15/9/2022";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-59.94deg);
           transform: scale(1.1) rotate(-59.94deg);
+}
+
+.pasado {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  position: relative;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(0, 128, 0, 0.2)));
+  background: linear-gradient(0deg, green 50%, rgba(0, 128, 0, 0.2) 50%);
+}
+.pasado:before, .pasado:after {
+  color: green;
+}
+.pasado:before {
+  content: "1";
+  background: #2C3E50 content-box;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+}
+.pasado:after {
+  content: "19/9/2022";
+  text-transform: uppercase;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
+  background: linear-gradient(transparent 50%, #2C3E50 50%);
+  -webkit-transform: scale(1.1) rotate(-180deg);
+          transform: scale(1.1) rotate(-180deg);
 }
 
 .pasadop {
@@ -181,7 +174,7 @@ h2 {
           transform: rotate(-0deg);
 }
 .pasadop:after {
-  content: "16/09/2022";
+  content: "20/9/2022";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
@@ -189,89 +182,97 @@ h2 {
           transform: scale(1.1) rotate(-0deg);
 }
 
-@property --p{
-    syntax: '<number>';
-    inherits: true;
-    initial-value: 0;
-  } 
-  /* grosor ind mensual*/
-  .pie {
-    text-transform: uppercase;
-    text-align: center;
-    --p:20;
-    /*grosor*/
-    --b:16px;
-    /*cicunferencia*/
-    --w:160px;
-    
-    width:var(--w);
-    aspect-ratio:1;
-    position:relative;
-    display:inline-grid;
-    margin:2px;
-    place-content:center;
-    /*letra*/
-    font-size:18px;
-    font-weight:bold;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  .pie:before,.pie:after {
-    content:"";
-    position:absolute;
-    border-radius:50%;
-  }
+table.tableizer-table {
+  text-transform: uppercase;
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #eee;
+}
 
-  .pie:before {
-    inset:0;
-    background:
-      radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
-      conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
-    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
-            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
-  }
-  .pie:after {
-    inset:calc(50% - var(--b)/2);
-    background:var(--c);
-    transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
-  }
-  .animate {
-    animation:p 1s .5s both;
-    color:#eee;
-  }
-  @keyframes p {
-    from{--p:0}
-  } 
-  table.tableizer-table {
-    text-transform: uppercase;
-    font-size: 10px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #eee;
-  }
-  .tableizer-table td, td, th {
-    text-align: center;
-    text-align: left;
-  }
-  /*colocacion de tabla*/
-  .tableizer-table{
-    text-align: left;
-    margin-left: 1rem;
-    width: 82%;
-    border-spacing: .5rem;
-    background-color: rgba(7, 123, 240, 0.542) 50%;
-  }
+.tableizer-table {
+  text-align: left;
+  margin-left: 1rem;
+  width: 82%;
+  border-spacing: 0.5rem;
+  background-color: #2C3E50;
+}
 
-.nav-ajusted{
+@property --p {
+  syntax: "<number>";
+  inherits: true;
+  initial-value: 0;
+}
+/* grosor ind mensual*/
+.pie {
+  text-transform: uppercase;
+  text-align: center;
+  --p:20;
+  /*grosor*/
+  --b:16px;
+  /*cicunferencia*/
+  --w:160px;
+  width: var(--w);
+  aspect-ratio: 1;
+  position: relative;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  margin: 2px;
+  place-content: center;
+  /*letra*/
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.pie:before, .pie:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+}
+
+.pie:before {
+  inset: 0;
+  background: radial-gradient(farthest-side, var(--c) 98%, rgba(0, 0, 0, 0)) top/var(--b) var(--b) no-repeat, conic-gradient(var(--c) calc(var(--p) * 1%), rgba(0, 0, 0, 0) 0);
+  -webkit-mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), #000 calc(100% - var(--b)));
+  mask: radial-gradient(farthest-side, rgba(0, 0, 0, 0) calc(99% - var(--b)), #000 calc(100% - var(--b)));
+}
+
+.pie:after {
+  inset: calc(50% - var(--b) / 2);
+  background: var(--c);
+  -webkit-transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - var(--w) / 2));
+          transform: rotate(calc(var(--p) * 3.6deg)) translateY(calc(50% - var(--w) / 2));
+}
+
+.animate {
+  -webkit-animation: p 1s 0.5s both;
+          animation: p 1s 0.5s both;
+  color: #eee;
+}
+
+@-webkit-keyframes p {
+  from {
+    --p:0;
+  }
+}
+
+@keyframes p {
+  from {
+    --p:0;
+  }
+}
+.nav-ajusted {
   max-width: 1200px;
   margin-top: -0.5rem;
   margin-bottom: -1rem;
 }
 
-.nav-ajusted_table{
+.nav-ajusted_table {
   max-width: 1200px;
   margin-top: -15rem;
 }
 
-.nav-ajusted_mensual{
+.nav-ajusted_mensual {
   max-width: 992px;
   margin-left: 75rem;
   margin-top: -14rem;
