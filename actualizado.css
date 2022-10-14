@@ -69,8 +69,8 @@ h2 {
 .ayer:before {
   content: "1";
   background: #2C3E50 content-box;
-  -webkit-transform: rotate(-0deg);
-          transform: rotate(-0deg);
+  -webkit-transform: rotate(-59.94deg);
+          transform: rotate(-59.94deg);
 }
 .ayer:after {
   content: "13/10/2022";
@@ -94,8 +94,8 @@ h2 {
 .hoy:before {
   content: "0";
   background: #2C3E50 content-box;
-  -webkit-transform: rotate(-59.94deg);
-          transform: rotate(-59.94deg);
+  -webkit-transform: rotate(-0deg);
+          transform: rotate(-0deg);
 }
 .hoy:after {
   content: "14/10/2022";
