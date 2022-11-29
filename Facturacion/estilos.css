@@ -10,6 +10,17 @@
     padding-left: 200px;
 }
 
+.nav-ajusted {
+    max-width: 1200px;
+    margin-top: -0.5rem;
+    margin-bottom: -1rem
+}
+
+.nav-ajusted_table {
+    max-width: 1200px;
+    margin-top: -15rem
+}
+
 
 h2{
     text-decoration: none;
