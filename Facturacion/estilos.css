@@ -149,7 +149,6 @@ a:hover{
     overflow: hidden;
   }
   .centrado{
-    margin: 0px;
     height: 100vh;
     background-color: #000;
     display: flex;
