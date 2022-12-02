@@ -1,3 +1,6 @@
-window.onload = function(){
+window.onload = () =>{
+
         $('#onload').fadeOut();
+
+
 }
