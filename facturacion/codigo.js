@@ -1,6 +1,5 @@
 window.onload = () =>{
-
-        $('#onload').fadeOut();
-
+    $('.onload').fadeOut();
+    $('body').removeClass('lottie-player-wrapper')
 
 }
