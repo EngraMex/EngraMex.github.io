@@ -1,4 +1,3 @@
-window.onload = () => {
-    let loading = docuument.getElementById('lottie-player-wrapper')
-    loading.style.diplay = 'none';
-}
+window.addEventListener("load", function(){
+    document.getElementById("loader").classList.toggle("loader2")
+})
