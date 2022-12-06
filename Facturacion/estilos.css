@@ -59,12 +59,14 @@ a{
     cursor: pointer;
     display: block;
     text-align: center;
+    z-index: 100000;
 }
 
 a:hover{
     background-color: transparent;
     border: 2px solid #f4791f;
     color: #f4791f;
+    z-index: 100000;
 }
 
 .lds-roller {
@@ -154,6 +156,7 @@ a:hover{
 
 img{
   position: absolute;
+  z-index: 100000;
 }
 
 .loader{
