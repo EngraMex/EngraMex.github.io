@@ -156,7 +156,6 @@ a:hover{
 
 img{
   position: absolute;
-  z-index: 100000;
 }
 
 .loader{
