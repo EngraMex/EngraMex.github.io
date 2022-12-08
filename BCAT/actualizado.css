@@ -148,8 +148,8 @@ h2 {
   .pasado:before {
     content: "1";
     background: #2C3E50 content-box;
-    -webkit-transform: rotate(-25.74deg);
-            transform: rotate(-25.74deg);
+    -webkit-transform: rotate(-0deg);
+            transform: rotate(-0deg);
   }
   .pasado:after {
     content: "13/12/2022";
