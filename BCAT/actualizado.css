@@ -148,16 +148,16 @@ h2 {
   .pasado:before {
     content: "1";
     background: #2C3E50 content-box;
-    -webkit-transform: rotate(-0deg);
-            transform: rotate(-0deg);
+    -webkit-transform: rotate(-25.74deg);
+            transform: rotate(-25.74deg);
   }
   .pasado:after {
     content: "13/12/2022";
     text-transform: uppercase;
     background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
     background: linear-gradient(transparent 50%, #2C3E50 50%);
-    -webkit-transform: scale(1.1) rotate(-0deg);
-            transform: scale(1.1) rotate(-0deg);
+    -webkit-transform: scale(1.1) rotate(-25.74deg);
+            transform: scale(1.1) rotate(-25.74deg);
   }
   
   .pasadop {
