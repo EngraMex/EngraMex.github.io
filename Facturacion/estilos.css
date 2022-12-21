@@ -37,6 +37,7 @@ th, td{
 }
 
 .text{
+  margin-bottom: 40px;
   padding: 50px;
   color: #f4791f;
   font-size: 35px;
