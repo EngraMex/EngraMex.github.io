@@ -7,19 +7,19 @@ body {
 
 h1 {
     text-align: center;
-    color: green
+    color: green;
+    font-size: 35px;
 }
 
 h2 {
     text-align: center;
     color: #f83600;
-    margin-top: 1rem;
     text-transform: uppercase
 }
 
 h3{
   margin-left: 200px;
-  margin-top: 270px;
+  margin-top: 265px;
   text-align: left;
   color:#f83600;
   text-transform: uppercase;
