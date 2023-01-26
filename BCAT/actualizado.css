@@ -18,8 +18,9 @@ h2 {
 }
 
 h3{
+  margin-left: 200px;
   margin-top: 270px;
-  text-align: center;
+  text-align: left;
   color:#f83600;
   text-transform: uppercase;
   font-size: 35px;
