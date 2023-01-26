@@ -8,7 +8,7 @@ body {
 h1 {
     text-align: center;
     color: green;
-    font-size: 35px;
+    font-size: 30px;
 }
 
 h2 {
@@ -19,7 +19,7 @@ h2 {
 
 h3{
   margin-left: 200px;
-  margin-top: 265px;
+  margin-top: 270px;
   text-align: left;
   color:#f83600;
   text-transform: uppercase;
