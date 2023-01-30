@@ -1,24 +1,25 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
     background: #2c3e50
 }
 
 h1 {
     text-align: center;
     color: green;
-    font-size: 30px;
+    font-size: 35px;
 }
 
 h2 {
     text-align: center;
     color: #f83600;
-    text-transform: uppercase
+    text-transform: uppercase;
+    font-size: 30px;
 }
 
 h3{
-  margin-left: 200px;
+  margin-left: 500px;
   margin-top: 270px;
   text-align: left;
   color:#f83600;
@@ -30,7 +31,7 @@ h3{
     display: flex;
     flex-wrap: initial;
     box-flex: auto;
-    margin-left: 0;
+    margin-left: 5rem;
     margin-right: 0
 }
 
@@ -64,8 +65,8 @@ h3{
 
 .circular-progress:after {
     text-align: center;
-    font-size: 1.3rem;
-    line-height: 7.5rem;
+    font-size: 1.5rem;
+    line-height: 7rem;
 }
 
 .ayer {
@@ -85,7 +86,7 @@ h3{
           transform: rotate(-0deg);
 }
 .ayer:after {
-  content: "26/01/2023";
+  content: "27/01/2023";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
@@ -94,28 +95,28 @@ h3{
 }
 
 .hoy {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
   position: relative;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
-  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(0, 128, 0, 0.2)));
+  background: linear-gradient(0deg, green 50%, rgba(0, 128, 0, 0.2) 50%);
 }
 .hoy:before, .hoy:after {
-  color: red;
+  color: green;
 }
 .hoy:before {
-  content: "0";
+  content: "1";
   background: #2C3E50 content-box;
-  -webkit-transform: rotate(-0deg);
-          transform: rotate(-0deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 .hoy:after {
   content: "27/01/2023";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
-  -webkit-transform: scale(1.1) rotate(-0deg);
-          transform: scale(1.1) rotate(-0deg);
+  -webkit-transform: scale(1.1) rotate(-180deg);
+          transform: scale(1.1) rotate(-180deg);
 }
 
 .manana {
@@ -135,7 +136,7 @@ h3{
           transform: rotate(-0deg);
 }
 .manana:after {
-  content: "30/01/2023";
+  content: "31/01/2023";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
@@ -160,7 +161,7 @@ h3{
           transform: rotate(-0deg);
 }
 .pasado:after {
-  content: "31/01/2023";
+  content: "01/02/2023";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
@@ -185,7 +186,7 @@ h3{
           transform: rotate(-0deg);
 }
 .pasadop:after {
-  content: "01/02/2023";
+  content: "02/02/2023";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
@@ -195,16 +196,16 @@ h3{
 
 table.tableizer-table {
     text-transform: uppercase;
-    font-size: 30px;
+    font-size: 22px;
     font-family: Arial, Helvetica, sans-serif;
     color: #eee
 }
 
 .tableizer-table {
     text-align: left;
-    margin-left: 12rem;
-    width: 80%;
-    border-spacing: 1rem;
+    margin-left: 15rem;
+    width: 90%;
+    border-spacing: .5rem;
     background-color: #2c3e50
 }
 
@@ -217,14 +218,14 @@ table.tableizer-table {
 .pie {
     text-transform: uppercase;
     text-align: center;
-    --p: 20;
+    --p: 30px;
     --b: 16px;
-    --w: 160px;
+    --w: 170px;
     width: var(--w);
     aspect-ratio: 1;
     position: relative;
     display: inline-grid;
-    margin: 5px;
+    margin: 1px;
     place-content: center;
     font-size: 25px;
     font-weight: bold;
@@ -271,21 +272,51 @@ table.tableizer-table {
 
 .nav-ajusted {
     max-width: 1500px;
-    margin-top: .2rem;
-    margin-bottom: -16.5rem;
+    margin-top: -0.5rem;
+    margin-bottom: -16rem;
 }
 
 .nav-ajusted_table {
-    max-width: 1500px;
+    max-width: 700px;
     margin-bottom: 0;
-    margin-top: -25rem;
+    margin-top: -30rem;
 
 }
 
 .nav-ajusted_mensual {
-    max-width: 992px;
-    margin-left: 60rem;
-    margin-top: 40px;
+    max-width: 200px;
+    margin-left: 75rem;
+    margin-top: 50px;
 }
 
+.GREEN{
+  color: green;
+}
+
+.RED{
+  color: red;
+}
+
+.YELLOW{
+  color: yellow;
+}
+
+.FECHA{
+  font-size: 25px;
+  color: red;
+}
+
+.FECHA1{
+  font-size: 25px;
+  color: yellow;
+}
+
+.FECHA2{
+  font-size: 25px;
+  color: green;
+}
+
+.encabezado{
+  font-size: 30px;
+}
 /*# sourceMappingURL=actualizado.css.map */
