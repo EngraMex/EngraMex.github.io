@@ -59,13 +59,13 @@ h3{
     padding: 1rem;
     -webkit-box-sizing: border-box;
         box-sizing: border-box;
-    font-size: 2rem;
-    line-height: 10rem;
+    font-size: 1.5rem;
+    line-height: 11rem;
 }
 
 .circular-progress:after {
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     line-height: 7rem;
 }
 
