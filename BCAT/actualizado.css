@@ -86,7 +86,7 @@ h3{
           transform: rotate(-0deg);
 }
 .ayer:after {
-  content: "27/01/2023";
+  content: "31/01/2023";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
@@ -111,7 +111,7 @@ h3{
           transform: rotate(-180deg);
 }
 .hoy:after {
-  content: "30/01/2023";
+  content: "01/02/2023";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
@@ -120,8 +120,8 @@ h3{
 }
 
 .manana {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -webkit-transform: rotate(59.94deg);
+          transform: rotate(59.94deg);
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
   background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
@@ -130,23 +130,23 @@ h3{
   color: red;
 }
 .manana:before {
-  content: "0";
+  content: "1";
   background: #2C3E50 content-box;
-  -webkit-transform: rotate(-0deg);
-          transform: rotate(-0deg);
+  -webkit-transform: rotate(-59.94deg);
+          transform: rotate(-59.94deg);
 }
 .manana:after {
-  content: "31/01/2023";
+  content: "02/02/2023";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
-  -webkit-transform: scale(1.1) rotate(-0deg);
-          transform: scale(1.1) rotate(-0deg);
+  -webkit-transform: scale(1.1) rotate(-59.94deg);
+          transform: scale(1.1) rotate(-59.94deg);
 }
 
 .pasado {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -webkit-transform: rotate(59.94deg);
+          transform: rotate(59.94deg);
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
   background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
@@ -155,23 +155,23 @@ h3{
   color: red;
 }
 .pasado:before {
-  content: "0";
+  content: "1";
   background: #2C3E50 content-box;
-  -webkit-transform: rotate(-0deg);
-          transform: rotate(-0deg);
+  -webkit-transform: rotate(-59.94deg);
+          transform: rotate(-59.94deg);
 }
 .pasado:after {
-  content: "01/02/2023";
+  content: "03/02/2023";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
-  -webkit-transform: scale(1.1) rotate(-0deg);
-          transform: scale(1.1) rotate(-0deg);
+  -webkit-transform: scale(1.1) rotate(-59.94deg);
+          transform: scale(1.1) rotate(-59.94deg);
 }
 
 .pasadop {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
+  -webkit-transform: rotate(59.94deg);
+          transform: rotate(59.94deg);
   position: relative;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
   background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
@@ -180,18 +180,18 @@ h3{
   color: red;
 }
 .pasadop:before {
-  content: "0";
+  content: "3";
   background: #2C3E50 content-box;
-  -webkit-transform: rotate(-0deg);
-          transform: rotate(-0deg);
+  -webkit-transform: rotate(-59.94deg);
+          transform: rotate(-59.94deg);
 }
 .pasadop:after {
-  content: "02/02/2023";
+  content: "07/02/2023";
   text-transform: uppercase;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
-  -webkit-transform: scale(1.1) rotate(-0deg);
-          transform: scale(1.1) rotate(-0deg);
+  -webkit-transform: scale(1.1) rotate(-59.94deg);
+          transform: scale(1.1) rotate(-59.94deg);
 }
 
 table.tableizer-table {
