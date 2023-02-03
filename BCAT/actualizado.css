@@ -80,7 +80,7 @@ h3{
   color: green;
 }
 .ayer:before {
-  content: "1";
+  content: "1 de 1";
   background: #2C3E50 content-box;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
@@ -105,7 +105,7 @@ h3{
   color: yellow;
 }
 .hoy:before {
-  content: "2";
+  content: "2 de 3";
   background: #2C3E50 content-box;
   -webkit-transform: rotate(-120.06deg);
           transform: rotate(-120.06deg);
@@ -130,7 +130,7 @@ h3{
   color: red;
 }
 .manana:before {
-  content: "1";
+  content: "1 de 3";
   background: #2C3E50 content-box;
   -webkit-transform: rotate(-59.94deg);
           transform: rotate(-59.94deg);
@@ -155,7 +155,7 @@ h3{
   color: red;
 }
 .pasado:before {
-  content: "3";
+  content: "3 de 9";
   background: #2C3E50 content-box;
   -webkit-transform: rotate(-59.94deg);
           transform: rotate(-59.94deg);
@@ -180,7 +180,7 @@ h3{
   color: red;
 }
 .pasadop:before {
-  content: "0";
+  content: "0 de 2";
   background: #2C3E50 content-box;
   -webkit-transform: rotate(-0deg);
           transform: rotate(-0deg);
