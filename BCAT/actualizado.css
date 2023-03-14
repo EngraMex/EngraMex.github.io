@@ -79,13 +79,13 @@ h3{
   color: red;
 }
 .ayer:before {
-  content: "13/03/2023";
+  content: "0 de 1";
   background: #2C3E50 content-box;
   -webkit-transform: rotate(-0deg);
           transform: rotate(-0deg);
 }
 .ayer:after {
-  content: "0 de 1";
+  content: "13/03/2023";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-0deg);
@@ -102,13 +102,13 @@ h3{
   color: red;
 }
 .hoy:before {
-  content: "14/03/2023";
+  content: "0 de 2";
   background: #2C3E50 content-box;
   -webkit-transform: rotate(-0deg);
           transform: rotate(-0deg);
 }
 .hoy:after {
-  content: "0 de 2";
+  content: "14/03/2023";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-0deg);
@@ -125,13 +125,13 @@ h3{
   color: red;
 }
 .manana:before {
-  content: "15/03/2023";
+  content: "0 de 1";
   background: #2C3E50 content-box;
   -webkit-transform: rotate(-0deg);
           transform: rotate(-0deg);
 }
 .manana:after {
-  content: "0 de 1";
+  content: "15/03/2023";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-0deg);
@@ -148,13 +148,13 @@ h3{
   color: red;
 }
 .pasado:before {
-  content: "16/03/2023";
+  content: "1 de 3";
   background: #2C3E50 content-box;
   -webkit-transform: rotate(-59.94deg);
           transform: rotate(-59.94deg);
 }
 .pasado:after {
-  content: "1 de 3";
+  content: "16/03/2023";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-59.94deg);
@@ -171,13 +171,13 @@ h3{
   color: red;
 }
 .pasadop:before {
-  content: "17/03/2023";
+  content: "0 de 4";
   background: #2C3E50 content-box;
   -webkit-transform: rotate(-0deg);
           transform: rotate(-0deg);
 }
 .pasadop:after {
-  content: "0 de 4";
+  content: "17/03/2023";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-0deg);
