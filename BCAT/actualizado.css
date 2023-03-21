@@ -72,11 +72,11 @@ h3{
 .ayer {
   -webkit-transform: rotate(120.06deg);
           transform: rotate(120.06deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
-  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, yellow), color-stop(50%, rgba(255, 255, 0, 0.2)));
+  background: linear-gradient(0deg, yellow 50%, rgba(255, 255, 0, 0.2) 50%);
 }
 .ayer:before, .ayer:after {
-  color: red;
+  color: yellow;
 }
 .ayer:before {
   content: "4 de 6";
