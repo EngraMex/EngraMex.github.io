@@ -164,11 +164,11 @@ h3{
 .pasadop {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, yellow), color-stop(50%, rgba(255, 255, 0, 0.2)));
-  background: linear-gradient(0deg, yellow 50%, rgba(255, 255, 0, 0.2) 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .pasadop:before, .pasadop:after {
-  color: yellow;
+  color: red;
 }
 .pasadop:before {
   content: "1 de 4";
