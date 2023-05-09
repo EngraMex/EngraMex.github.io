@@ -108,7 +108,7 @@ h3{
           transform: rotate(-180deg);
 }
 .hoy:after {
-  content: "9/mayo/2023";
+  content: "09/05/2023";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-180deg);
