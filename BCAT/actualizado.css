@@ -108,7 +108,7 @@ h3{
           transform: rotate(-120.06deg);
 }
 .hoy:after {
-  content: "04/06/2023";
+  content: "04/07/2023";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-120.06deg);
@@ -177,7 +177,7 @@ h3{
           transform: rotate(-59.94deg);
 }
 .pasadop:after {
-  content: "07/06/2023";
+  content: "07/07/2023";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, #2C3E50));
   background: linear-gradient(transparent 50%, #2C3E50 50%);
   -webkit-transform: scale(1.1) rotate(-59.94deg);
