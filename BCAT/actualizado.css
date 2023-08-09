@@ -59,7 +59,7 @@ h3{
     padding: 1rem;
     -webkit-box-sizing: border-box;
         box-sizing: border-box;
-    font-size: 2.5rem;
+    font-size: 2rem;
     line-height: 10rem;
 }
 
@@ -79,7 +79,7 @@ h3{
   color: green;
 }
 .ayer:before {
-  content: "1 de 1";
+  content: "1 de 1 ";
   background: white content-box;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
@@ -141,11 +141,11 @@ h3{
 .pasado {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
-  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .pasado:before, .pasado:after {
-  color: blue;
+  color: red;
 }
 .pasado:before {
   content: "0 de 2";
@@ -160,7 +160,6 @@ h3{
   -webkit-transform: scale(1.1) rotate(-0deg);
           transform: scale(1.1) rotate(-0deg);
 }
-
 .pasadop {
   -webkit-transform: rotate(59.94deg);
           transform: rotate(59.94deg);
@@ -257,7 +256,7 @@ table.tableizer-table {
 }
 
 .nav-ajusted {
-    max-width: 1400px;
+    max-width: 1500px;
     margin-bottom: -16rem;
 }
 
@@ -270,7 +269,7 @@ table.tableizer-table {
 
 .nav-ajusted_mensual {
     max-width: 350px;
-    margin-left: 60rem;
+    margin-left: 55rem;
     margin-top: 50px;
 }
 
