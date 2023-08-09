@@ -19,9 +19,9 @@ h2 {
 }
 
 h3{
-  margin-left: 500px;
   margin-top: 270px;
-  text-align: left;
+  margin-bottom: 90px;
+  text-align: center;
   color:#f83600;
   text-transform: uppercase;
   font-size: 35px;
@@ -29,9 +29,9 @@ h3{
 
 .skills {
     display: flex;
-    flex-wrap: initial;
+    flex-wrap: wrap;
     box-flex: auto;
-    margin-left: 7rem;
+    margin-left: 6rem;
     margin-right: 0;
 }
 
@@ -116,26 +116,26 @@ h3{
 }
 
 .manana {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
-  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+  -webkit-transform: rotate(59.94deg);
+          transform: rotate(59.94deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .manana:before, .manana:after {
-  color: blue;
+  color: red;
 }
 .manana:before {
-  content: "0 de 4";
+  content: "1 de 3";
   background: white content-box;
-  -webkit-transform: rotate(-0deg);
-          transform: rotate(-0deg);
+  -webkit-transform: rotate(-59.94deg);
+          transform: rotate(-59.94deg);
 }
 .manana:after {
   content: "09/08/2023";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
   background: linear-gradient(transparent 50%, white 50%);
-  -webkit-transform: scale(1.1) rotate(-0deg);
-          transform: scale(1.1) rotate(-0deg);
+  -webkit-transform: scale(1.1) rotate(-59.94deg);
+          transform: scale(1.1) rotate(-59.94deg);
 }
 
 .pasado {
@@ -193,7 +193,7 @@ table.tableizer-table {
 
 .tableizer-table {
     text-align: left;
-    margin-left: 15rem;
+    margin-left: 10rem;
     width: 90%;
     border-spacing: .5rem;
     background-color: white;
@@ -216,7 +216,8 @@ table.tableizer-table {
   width:var(--w);
   aspect-ratio:1;
   position:relative;
-  display:inline-grid;
+  display:flex;
+  flex-wrap:wrap;
   margin:5px;
   place-content:center;
   font-size:30px;
@@ -256,8 +257,7 @@ table.tableizer-table {
 }
 
 .nav-ajusted {
-    max-width: 1500px;
-    margin-top: -0.5rem;
+    max-width: 1400px;
     margin-bottom: -16rem;
 }
 
@@ -269,8 +269,8 @@ table.tableizer-table {
 }
 
 .nav-ajusted_mensual {
-    max-width: 300px;
-    margin-left: 70rem;
+    max-width: 350px;
+    margin-left: 60rem;
     margin-top: 50px;
 }
 
@@ -292,11 +292,6 @@ table.tableizer-table {
 .BLUE{
   color: blue;
   text-transform: uppercase;
-}
-
-.FECHA{
-  font-size: 25px;
-  color: red;
 }
 
 .encabezado{
