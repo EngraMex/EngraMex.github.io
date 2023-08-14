@@ -18,11 +18,11 @@ h2 {
 }
 
 h3{
-margin-top: 270px;
-margin-bottom: 90px;
-text-align: center;
-color:#f83600;
-font-size: 35px;
+  margin-top: 270px;
+  margin-bottom: 90px;
+  text-align: center;
+  color:#f83600;
+  font-size: 35px;
 }
 
 .skills {
@@ -68,117 +68,118 @@ font-size: 35px;
 }
 
 .ayer {
--webkit-transform: rotate(180deg);
-        transform: rotate(180deg);
-background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(0, 128, 0, 0.2)));
-background: linear-gradient(0deg, green 50%, rgba(0, 128, 0, 0.2) 50%);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, orange), color-stop(50%, rgba(255, 165, 0, 0.2)));
+  background: linear-gradient(0deg, orange 50%, rgba(255, 165, 0, 0.2) 50%);
 }
 .ayer:before, .ayer:after {
-color: green;
+  color: orange;
 }
 .ayer:before {
-content: "1 de 1 ";
-background: white content-box;
--webkit-transform: rotate(-180deg);
-        transform: rotate(-180deg);
+  content: "1 de 2";
+  background: white content-box;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .ayer:after {
-content: "07/08/2023";
-background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
-background: linear-gradient(transparent 50%, white 50%);
--webkit-transform: scale(1.1) rotate(-180deg);
-        transform: scale(1.1) rotate(-180deg);
+  content: "14/08/2023";
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
+  background: linear-gradient(transparent 50%, white 50%);
+  -webkit-transform: scale(1.1) rotate(-90deg);
+          transform: scale(1.1) rotate(-90deg);
 }
 
 .hoy {
--webkit-transform: rotate(90deg);
-        transform: rotate(90deg);
-background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, orange), color-stop(50%, rgba(255, 165, 0, 0.2)));
-background: linear-gradient(0deg, orange 50%, rgba(255, 165, 0, 0.2) 50%);
+  -webkit-transform: rotate(108deg);
+          transform: rotate(108deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, orange), color-stop(50%, rgba(255, 165, 0, 0.2)));
+  background: linear-gradient(0deg, orange 50%, rgba(255, 165, 0, 0.2) 50%);
 }
 .hoy:before, .hoy:after {
-color: orange;
+  color: orange;
 }
 .hoy:before {
-content: "1 de 2";
-background: white content-box;
--webkit-transform: rotate(-90deg);
-        transform: rotate(-90deg);
+  content: "3 de 5";
+  background: white content-box;
+  -webkit-transform: rotate(-108deg);
+          transform: rotate(-108deg);
 }
 .hoy:after {
-content: "08/08/2023";
-background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
-background: linear-gradient(transparent 50%, white 50%);
--webkit-transform: scale(1.1) rotate(-90deg);
-        transform: scale(1.1) rotate(-90deg);
+  content: "15/08/2023";
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
+  background: linear-gradient(transparent 50%, white 50%);
+  -webkit-transform: scale(1.1) rotate(-108deg);
+          transform: scale(1.1) rotate(-108deg);
 }
 
 .manana {
--webkit-transform: rotate(120.06deg);
-        transform: rotate(120.06deg);
-background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, orange), color-stop(50%, rgba(255, 165, 0, 0.2)));
-background: linear-gradient(0deg, orange 50%, rgba(255, 165, 0, 0.2) 50%);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .manana:before, .manana:after {
-color: orange;
+  color: red;
 }
 .manana:before {
-content: "2 de 3";
-background: white content-box;
--webkit-transform: rotate(-120.06deg);
-        transform: rotate(-120.06deg);
+  content: "0 de 1";
+  background: white content-box;
+  -webkit-transform: rotate(-0deg);
+          transform: rotate(-0deg);
 }
 .manana:after {
-content: "09/08/2023";
-background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
-background: linear-gradient(transparent 50%, white 50%);
--webkit-transform: scale(1.1) rotate(-120.06deg);
-        transform: scale(1.1) rotate(-120.06deg);
+  content: "16/08/2023";
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
+  background: linear-gradient(transparent 50%, white 50%);
+  -webkit-transform: scale(1.1) rotate(-0deg);
+          transform: scale(1.1) rotate(-0deg);
 }
 
 .pasado {
--webkit-transform: rotate(180deg);
-        transform: rotate(180deg);
-background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(0, 128, 0, 0.2)));
-background: linear-gradient(0deg, green 50%, rgba(0, 128, 0, 0.2) 50%);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, orange), color-stop(50%, rgba(255, 165, 0, 0.2)));
+  background: linear-gradient(0deg, orange 50%, rgba(255, 165, 0, 0.2) 50%);
 }
 .pasado:before, .pasado:after {
-color: green;
+  color: orange;
 }
 .pasado:before {
-content: "2 de 2";
-background: white content-box;
--webkit-transform: rotate(-180deg);
-        transform: rotate(-180deg);
+  content: "1 de 2";
+  background: white content-box;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .pasado:after {
-content: "10/08/2023";
-background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
-background: linear-gradient(transparent 50%, white 50%);
--webkit-transform: scale(1.1) rotate(-180deg);
-        transform: scale(1.1) rotate(-180deg);
+  content: "17/08/2023";
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
+  background: linear-gradient(transparent 50%, white 50%);
+  -webkit-transform: scale(1.1) rotate(-90deg);
+          transform: scale(1.1) rotate(-90deg);
 }
+
 .pasadop {
--webkit-transform: rotate(59.94deg);
-        transform: rotate(59.94deg);
-background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
-background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .pasadop:before, .pasadop:after {
-color: red;
+  color: red;
 }
 .pasadop:before {
-content: "1 de 3";
-background: white content-box;
--webkit-transform: rotate(-59.94deg);
-        transform: rotate(-59.94deg);
+  content: "0 de 1";
+  background: white content-box;
+  -webkit-transform: rotate(-0deg);
+          transform: rotate(-0deg);
 }
 .pasadop:after {
-content: "11/08/2023";
-background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
-background: linear-gradient(transparent 50%, white 50%);
--webkit-transform: scale(1.1) rotate(-59.94deg);
-        transform: scale(1.1) rotate(-59.94deg);
+  content: "18/08/2023";
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
+  background: linear-gradient(transparent 50%, white 50%);
+  -webkit-transform: scale(1.1) rotate(-0deg);
+          transform: scale(1.1) rotate(-0deg);
 }
 
 table.tableizer-table {
@@ -196,60 +197,66 @@ table.tableizer-table {
 }
 
 @property --p{
-syntax: '<number>';
-inherits: true;
-initial-value: 0;
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
 }
 
 .pie {
-text-transform: uppercase;
-text-align: center;
---p:20;
---b:22px;
---c:white;
---w:300px;
+  text-transform: uppercase;
+  text-align: center;
+  --p:20;
+  --b:22px;
+  --c:white;
+  --w:300px;
 
-width:var(--w);
-aspect-ratio:1;
-position:relative;
-display:flex;
-flex-wrap:wrap;
-margin:5px;
-place-content:center;
-font-size:30px;
-font-weight:bold;
-font-family:Arial,sans-serif;
+  width:var(--w);
+  aspect-ratio:1;
+  position:relative;
+  display:flex;
+  flex-wrap:wrap;
+  margin:5px;
+  place-content:center;
+  font-size:30px;
+  font-weight:bold;
+  font-family:Arial,sans-serif;
 }
+
 .pie:before,
 .pie:after {
-content:"";
-position:absolute;
-border-radius:50%;
+  content:"";
+  position:absolute;
+  border-radius:50%;
 }
+
 .pie:before {
-inset:0;
-background:
-  radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
-  conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
--webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
-        mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+  inset:0;
+  background:
+    radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+    conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+  -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+          mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
 }
+
 .pie:after {
-inset:calc(50% - var(--b)/2);
-background:var(--c);
-transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+  inset:calc(50% - var(--b)/2);
+  background:var(--c);
+  transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
 }
+
 .animate {
-animation:p 1s .5s both;
+  animation:p 1s .5s both;
 }
+
 .no-round:before {
-background-size:0 0,auto;
+  background-size:0 0,auto;
 }
+
 .no-round:after {
 content:none;
 }
 @keyframes p {
-from{--p:0}
+  from{--p:0}
 }
 
 .nav-ajusted {
@@ -261,7 +268,6 @@ from{--p:0}
   max-width: 700px;
   margin-bottom: 0;
   margin-top: -37rem;
-
 }
 
 .nav-ajusted_mensual {
@@ -272,27 +278,27 @@ from{--p:0}
 }
 
 .GREEN{
-color: green;
-text-transform: uppercase;
+  color: green;
+  text-transform: uppercase;
 }
 
 .RED{
-color: red;
-text-transform: uppercase;
+  color: red;
+  text-transform: uppercase;
 }
 
 .YELLOW{
-color: yellow;
-text-transform: uppercase;
+  color: yellow;
+  text-transform: uppercase;
 }
 
 .BLUE{
-color: blue;
-text-transform: uppercase;
+  color: blue;
+  text-transform: uppercase;
 }
 
 .encabezado{
-font-size: 30px;
+  font-size: 30px;
 }
 
 .CXP{
