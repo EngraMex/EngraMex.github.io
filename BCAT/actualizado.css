@@ -68,118 +68,118 @@ h3{
 }
 
 .ayer {
-  -webkit-transform: rotate(36deg);
-          transform: rotate(36deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, RED), color-stop(50%, rgba(255, 0, 0, 0.2)));
-  background: linear-gradient(0deg, RED 50%, rgba(255, 0, 0, 0.2) 50%);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, green 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .ayer:before, .ayer:after {
-  color: RED;
+  color: green;
 }
 .ayer:before {
-  content: "1 de 5";
+  content: "1 de 1";
   background: white content-box;
-  -webkit-transform: rotate(-36deg);
-          transform: rotate(-36deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 .ayer:after {
-  content: "18/09/2023";
+  content: "25/09/2023";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
   background: linear-gradient(transparent 50%, white 50%);
-  -webkit-transform: scale(1.1) rotate(-36deg);
-          transform: scale(1.1) rotate(-36deg);
+  -webkit-transform: scale(1.1) rotate(-180deg);
+          transform: scale(1.1) rotate(-180deg);
 }
 
 .hoy {
-  -webkit-transform: rotate(120.6deg);
-          transform: rotate(120.6deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, orange), color-stop(50%, rgba(255, 165, 0, 0.2)));
-  background: linear-gradient(0deg, orange 50%, rgba(255, 165, 0, 0.2) 50%);
-}
-.hoy:before, .hoy:after {
-  color: orange;
-}
-.hoy:before {
-  content: "2 de 3";
-  background: white content-box;
-  -webkit-transform: rotate(-120.6deg);
-          transform: rotate(-120.6deg);
-}
-.hoy:after {
-  content: "19/09/2023";
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
-  background: linear-gradient(transparent 50%, white 50%);
-  -webkit-transform: scale(1.1) rotate(-120.6deg);
-          transform: scale(1.1) rotate(-120.6deg);
-}
-
-.manana {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
-  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
-}
-.manana:before, .manana:after {
-  color: red;
-}
-.manana:before {
-  content: "1 de 2";
-  background: white content-box;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-}
-.manana:after {
-  content: "20/09/2023";
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
-  background: linear-gradient(transparent 50%, white 50%);
-  -webkit-transform: scale(1.1) rotate(-90deg);
-          transform: scale(1.1) rotate(-90deg);
-}
-
-.pasado {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
-  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
+  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
 }
-.pasado:before, .pasado:after {
-  color: red;
+.hoy:before, .hoy:after {
+  color: blue;
 }
-.pasado:before {
-  content: "0 de 1";
+.hoy:before {
+  content: "0 de 0";
   background: white content-box;
   -webkit-transform: rotate(-0deg);
           transform: rotate(-0deg);
 }
-.pasado:after {
-  content: "21/09/2023";
+.hoy:after {
+  content: "26/09/2023";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
   background: linear-gradient(transparent 50%, white 50%);
   -webkit-transform: scale(1.1) rotate(-0deg);
           transform: scale(1.1) rotate(-0deg);
 }
 
-.pasadop {
+.manana {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
+  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+}
+.manana:before, .manana:after {
+  color: blue;
+}
+.manana:before {
+  content: "0 de 1";
+  background: white content-box;
+  -webkit-transform: rotate(-0deg);
+          transform: rotate(-0deg);
+}
+.manana:after {
+  content: "27/09/2023";
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
+  background: linear-gradient(transparent 50%, white 50%);
+  -webkit-transform: scale(1.1) rotate(-0deg);
+          transform: scale(1.1) rotate(-0deg);
+}
+
+.pasado {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(0, 0, 255, 0.2)));
   background: linear-gradient(0deg, green 50%, rgba(0, 0, 255, 0.2) 50%);
 }
-.pasadop:before, .pasadop:after {
+.pasado:before, .pasado:after {
   color: green;
 }
-.pasadop:before {
+.pasado:before {
   content: "1 de 1";
   background: white content-box;
   -webkit-transform: rotate(-180deg);
           transform: rotate(-180deg);
 }
-.pasadop:after {
-  content: "22/09/2023";
+.pasado:after {
+  content: "28/09/2023";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
   background: linear-gradient(transparent 50%, white 50%);
   -webkit-transform: scale(1.1) rotate(-180deg);
           transform: scale(1.1) rotate(-180deg);
+}
+
+.pasadop {
+  -webkit-transform: rotate(25.2deg);
+          transform: rotate(25.2deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
+}
+.pasadop:before, .pasadop:after {
+  color: red;
+}
+.pasadop:before {
+  content: "1 de 7";
+  background: white content-box;
+  -webkit-transform: rotate(-25.2deg);
+          transform: rotate(-25.2deg);
+}
+.pasadop:after {
+  content: "29/09/2023";
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
+  background: linear-gradient(transparent 50%, white 50%);
+  -webkit-transform: scale(1.1) rotate(-25.2deg);
+          transform: scale(1.1) rotate(-25.2deg);
 }
 
 .sem2 {
@@ -307,7 +307,7 @@ table.tableizer-table {
 }
 
 .RED{
-  color: red;
+  color: blue;
   text-transform: uppercase;
 }
 
