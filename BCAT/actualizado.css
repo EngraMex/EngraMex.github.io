@@ -160,26 +160,26 @@ h3{
 }
 
 .pasadop {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
-  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(0, 0, 255, 0.2)));
+  background: linear-gradient(0deg, green 50%, rgba(0, 0, 255, 0.2) 50%);
 }
 .pasadop:before, .pasadop:after {
-  color: blue;
+  color: green;
 }
 .pasadop:before {
   content: "0 de 1";
   background: white content-box;
-  -webkit-transform: rotate(-0deg);
-          transform: rotate(-0deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 .pasadop:after {
   content: "13/10/2023";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
   background: linear-gradient(transparent 50%, white 50%);
-  -webkit-transform: scale(1.1) rotate(-0deg);
-          transform: scale(1.1) rotate(-0deg);
+  -webkit-transform: scale(1.1) rotate(-180deg);
+          transform: scale(1.1) rotate(-180deg);
 }
 
 .sem2 {
