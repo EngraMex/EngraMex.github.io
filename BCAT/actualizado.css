@@ -139,8 +139,8 @@ h3{
 .pasado {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(0, 0, 255, 0.2)));
-  background: linear-gradient(0deg, red 50%, rgba(0, 0, 255, 0.2) 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .pasado:before, .pasado:after {
   color: red;
