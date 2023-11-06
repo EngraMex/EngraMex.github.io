@@ -14,15 +14,15 @@ h1 {
 h2 {
   text-align: center;
   color: #f83600;
-  font-size: 30px;
+  font-size: 10px;
 }
 
 h3{
-  margin-top: 270px;
+  margin-top: 260px;
   margin-bottom: 90px;
   text-align: center;
   color:#f83600;
-  font-size: 35px;
+  font-size: 32px;
 }
 
 .skills {
@@ -30,7 +30,6 @@ h3{
   flex-wrap: wrap;
   box-flex: auto;
   margin-left: 6rem;
-  margin-right: 0;
 }
 
 .circular-progress {
@@ -206,7 +205,7 @@ h3{
 }
 
 table.tableizer-table {
-  font-size: 22px;
+  font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   color: black;
 }
