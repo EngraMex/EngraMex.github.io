@@ -90,26 +90,26 @@ h3{
 }
 
 .hoy {
-  -webkit-transform: rotate(59.4deg);
-          transform: rotate(59.4deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
-  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+  -webkit-transform: rotate(120.6deg);
+          transform: rotate(120.6deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, orange), color-stop(50%, rgba(255, 168, 0, 0.2)));
+  background: linear-gradient(0deg, orange 50%, rgba(255, 168, 0, 0.2) 50%);
 }
 .hoy:before, .hoy:after {
-  color: blue;
+  color: orange;
 }
 .hoy:before {
-  content: "1 de 3";
+  content: "2 de 3";
   background: white content-box;
-  -webkit-transform: rotate(-59.4deg);
-          transform: rotate(-59.4deg);
+  -webkit-transform: rotate(-120.6deg);
+          transform: rotate(-120.6deg);
 }
 .hoy:after {
   content: "21/11/2023";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
   background: linear-gradient(transparent 50%, white 50%);
-  -webkit-transform: scale(1.1) rotate(-59.4deg);
-          transform: scale(1.1) rotate(-59.4deg);
+  -webkit-transform: scale(1.1) rotate(-120.6deg);
+          transform: scale(1.1) rotate(-120.6deg);
 }
 
 .manana {
