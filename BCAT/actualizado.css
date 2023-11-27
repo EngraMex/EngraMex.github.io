@@ -168,7 +168,7 @@ h3{
   color: blue;
 }
 .pasadop:before {
-  content: "0 de 0";
+  content: "0 de 1";
   background: white content-box;
   -webkit-transform: rotate(-0deg);
           transform: rotate(-0deg);
@@ -191,7 +191,7 @@ h3{
   color: blue;
 }
 .sem2:before {
-  content: "0 de 0";
+  content: "0 de 1";
   background: white content-box;
   -webkit-transform: rotate(-0deg);
           transform: rotate(-0deg);
