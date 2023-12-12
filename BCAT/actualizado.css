@@ -288,7 +288,7 @@ table.tableizer-table {
 }
 
 .nav-ajusted_table {
-  max-width: 700px;
+  max-width: 850px;
   margin-bottom: 0;
   margin-top: -37rem;
 }
@@ -296,13 +296,14 @@ table.tableizer-table {
 .nav-ajusted_mensual {
   display: flex;
   max-width: 350px;
-  margin-left: 55rem;
+  margin-left: 65rem;
   margin-top: 50px;
 }
 
 .GREEN{
   color: green;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .RED{
@@ -324,10 +325,31 @@ table.tableizer-table {
   font-size: 30px;
 }
 
+.AMORV{
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.AMORY{
+  background-color: yellow;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.AMORR{
+  background-color: red;
+  color: white;
+  text-align: center;
+  font-size: 20px;  
+}
+
 .CXP{
   max-width: 350px;
   margin-top: -550px;
-  margin-left: 76rem;
+  margin-left: 85rem;
 }
 
 .leyendaH {text-align:left;}
