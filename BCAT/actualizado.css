@@ -115,11 +115,11 @@ h3{
 .manana {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
-  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .manana:before, .manana:after {
-  color: blue;
+  color: red;
 }
 .manana:before {
   content: "0 de 1";
@@ -284,7 +284,7 @@ table.tableizer-table {
 
 .nav-ajusted {
   max-width: 1500px;
-  margin-bottom: -16rem;
+  margin-bottom: -15rem;
 }
 
 .nav-ajusted_table {
@@ -351,9 +351,17 @@ table.tableizer-table {
   margin-left: 85rem;
 }
 
-.leyendaH {text-align:left;}
-.leyenda  ul {list-style-type:none;padding: 0 10px;}
-.leyendaH ul {display:inline-block;text-align: center;}
-.leyenda  ul>li {font-size:25px;}
-.leyendaH ul>li {float:right;margin-right:5px;text-align: center;}
-.leyenda  ul>li>span {width:12px;height:10px;display:inline-block;margin-right:2px;}
+.leyenda  ul {
+  list-style-type:none;padding: 0 10px;
+}
+.leyendaH ul {
+  display:inline-block;text-align: center;
+}
+.leyenda  ul>li {
+  font-size:25px;
+}
+.leyenda  ul>li>span {
+  width:12px;height:10px;display:inline-block;margin-right:2px;
+}
+
+
