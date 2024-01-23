@@ -76,7 +76,7 @@ h3{
   color: orange;
 }
 .ayer:before {
-  content: "2 de 4";
+  content: "3 de 4";
   background: white content-box;
   -webkit-transform: rotate(-135deg);
           transform: rotate(-135deg);
