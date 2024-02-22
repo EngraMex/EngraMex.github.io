@@ -19,7 +19,7 @@ h2 {
 
 h3{
   margin-top: 260px;
-  margin-bottom: 90px;
+  margin-bottom: 100px;
   text-align: center;
   color:#f83600;
   font-size: 32px;
@@ -69,11 +69,11 @@ h3{
 .ayer {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
-  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .ayer:before, .ayer:after {
-  color: blue;
+  color: red;
 }
 .ayer:before {
   content: "1 de 2";
@@ -90,59 +90,59 @@ h3{
 }
 
 .hoy {
-  -webkit-transform: rotate(59.4deg);
-          transform: rotate(59.4deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
-  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+  -webkit-transform: rotate(120.6deg);
+          transform: rotate(120.6deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, orange), color-stop(50%, rgba(255, 168, 0, 0.2)));
+  background: linear-gradient(0deg, orange 50%, rgba(255, 168, 0, 0.2) 50%);
 }
 .hoy:before, .hoy:after {
-  color: blue;
+  color: orange;
 }
 .hoy:before {
-  content: "1 de 3";
+  content: "2 de 3";
   background: white content-box;
-  -webkit-transform: rotate(-59.4deg);
-          transform: rotate(-59.4deg);
+  -webkit-transform: rotate(-120.6deg);
+          transform: rotate(-120.6deg);
 }
 .hoy:after {
   content: "20/02/2024";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
   background: linear-gradient(transparent 50%, white 50%);
-  -webkit-transform: scale(1.1) rotate(-59.4deg);
-          transform: scale(1.1) rotate(-59.4deg);
+  -webkit-transform: scale(1.1) rotate(-120.6deg);
+          transform: scale(1.1) rotate(-120.6deg);
 }
 
 .manana {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
-  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+  -webkit-transform: rotate(70deg);
+          transform: rotate(70deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .manana:before, .manana:after {
-  color: blue;
+  color: red;
 }
 .manana:before {
-  content: "0 de 5";
+  content: "2 de 5";
   background: white content-box;
-  -webkit-transform: rotate(-0deg);
-          transform: rotate(-0deg);
+  -webkit-transform: rotate(-70deg);
+          transform: rotate(-70deg);
 }
 .manana:after {
   content: "21/02/2024";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
   background: linear-gradient(transparent 50%, white 50%);
-  -webkit-transform: scale(1.1) rotate(-0deg);
-          transform: scale(1.1) rotate(-0deg);
+  -webkit-transform: scale(1.1) rotate(-70deg);
+          transform: scale(1.1) rotate(-70deg);
 }
 
 .pasado {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
-  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .pasado:before, .pasado:after {
-  color: blue;
+  color: red;
 }
 .pasado:before {
   content: "0 de 1";
@@ -290,7 +290,7 @@ table.tableizer-table {
 .nav-ajusted_table {
   max-width: 850px;
   margin-bottom: 0;
-  margin-top: -37rem;
+  margin-top: -39.1rem;
 }
 
 .nav-ajusted_mensual {
