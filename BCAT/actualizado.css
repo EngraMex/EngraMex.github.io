@@ -146,7 +146,7 @@ h3{
   color: blue;
 }
 .pasado:before {
-  content: "0 de 2";
+  content: "1 de 2";
   background: white content-box;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
