@@ -139,11 +139,11 @@ h3{
 .pasado {
   -webkit-transform: rotate(120.56deg);
           transform: rotate(120.56deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
-  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, orange), color-stop(50%, rgba(255, 168, 0, 0.2)));
+  background: linear-gradient(0deg, orange 50%, rgba(255, 168, 0, 0.2) 50%);
 }
 .pasado:before, .pasado:after {
-  color: blue;
+  color: orange;
 }
 .pasado:before {
   content: "2 de 3";
