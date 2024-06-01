@@ -353,14 +353,14 @@ table.tableizer-table {
 }
 
 .leyenda  ul {
-  list-style-type:none;padding: 0 10px;
+  list-style-type:none;padding: 10 10px;
 }
 .leyendaH ul {
   display:inline-block;text-align: center;
 }
 .leyenda  ul>li {
-  font-size:25px;
+  font-size:30px;
 }
 .leyenda  ul>li>span {
-  width:12px;height:10px;display:inline-block;margin-right:2px;
+  width:12px;height:15px;display:inline-block;margin-right:2px;
 }
