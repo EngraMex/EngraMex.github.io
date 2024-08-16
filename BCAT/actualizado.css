@@ -183,8 +183,8 @@ h3{
 }
 
 .sem2 {
-  -webkit-transform: rotate(70deg);
-          transform: rotate(70deg);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
   background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
   background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
 }
@@ -194,15 +194,15 @@ h3{
 .sem2:before {
   content: "1 de 4";
   background: white content-box;
-  -webkit-transform: rotate(-70deg);
-          transform: rotate(-70deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .sem2:after {
   content: "19/08/2024";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
   background: linear-gradient(transparent 50%, white 50%);
-  -webkit-transform: scale(1.1) rotate(-70deg);
-          transform: scale(1.1) rotate(-70deg);
+  -webkit-transform: scale(1.1) rotate(-90deg);
+          transform: scale(1.1) rotate(-90deg);
 }
 
 table.tableizer-table {
