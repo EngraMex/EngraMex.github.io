@@ -24,7 +24,11 @@
         <div  class="circular-progress mensual"></div>
           <div class="CXP" style="float:left;">
             <canvas id="canvas2"></canvas>
-              <div id="leyenda2" class="leyenda"></div>
+            <div id="leyenda2" class="leyenda"></div>
+          <div class="GOP" style="float: left;">
+             <canvas id="canvas3"></canvas>  
+             <div id="Truput" class="Truput"></div>
+              
     </div>
         <tbody>
             <thead>
@@ -36,13 +40,13 @@
             </thead>
               <th>
                 <tr>
-                  <td>Lunes-19-Ago</td><td>3091</td><td>6261</td><td class="BLUE">EN PROCESO</td><td class="AMORY"></td>
+                  <td>Lunes-19-Ago</td><td>3091</td><td>6261</td><td class="RED">RE-PLAN 28/08</td><td class="AMORR"></td>
                 </tr>
                 <tr>
-                  <td>Lunes-19-Ago</td><td></td><td>6259 - 6260</td><td class="BLUE">EN PROCESO</td><td class="AMORY"></td>
+                  <td>Lunes-19-Ago</td><td></td><td>6259 - 6260</td><td class="RED">RE-PLAN 28/08</td><td class="AMORR"></td>
                 </tr>
                 <tr>
-                  <td>Lunes-19-Ago</td><td>3105</td><td>6290 - 6291</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td>
+                  <td>Lunes-19-Ago</td><td>3105</td><td>6290 - 6291</td><td class="RED">RE-PLAN 27/08</td><td class="AMORR"></td>
                 </tr>
                 <tr>
                   <td>Lunes-19-Ago</td><td>2985</td><td>6051</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td>
@@ -51,13 +55,13 @@
                   <td>Lunes-19-Ago</td><td>3013</td><td>6113</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td>
                 </tr>
                 <tr>
-                  <td>Martes-20-Ago</td><td>3048</td><td>6178 - 6180</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td>
+                  <td>Martes-20-Ago</td><td>3048</td><td>6178 - 6180</td><td class="RED">RE-PLAN 28/08</td><td class="AMORR"></td>
                 </tr>
                 <tr>
-                  <td>Martes-20-Ago</td><td>3094</td><td>6264 - 6265</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td>
+                  <td>Martes-20-Ago</td><td>3094</td><td>6264 - 6265</td><td class="RED">RE-PLAN 29/09</td><td class="AMORR"></td>
                 </tr>
                 <tr>
-                  <td>Martes-20-Ago</td><td>3092</td><td>6263</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td>
+                  <td>Martes-20-Ago</td><td>3092</td><td>6263</td><td class="RED">RE-PLAN 11/09</td><td class="AMORR"></td>
                 </tr>
                 <tr>
                   <td>Miercoles-21-Ago</td><td>3084</td><td>6247</td><td class="BLUE">EN PROCESO</td><td class="AMORR"></td>
@@ -66,7 +70,7 @@
                   <td>Miercoles-21-Ago</td><td>3028</td><td>6137 - 6138</td><td class="BLUE">EN PROCESO</td><td class="AMORR"></td>
                 </tr>
                 <tr>
-                  <td>Jueves-22-Ago</td><td>2970</td><td>6030 - 6033</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td>
+                  <td>Jueves-22-Ago</td><td>2970</td><td>6030 - 6033</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td>
                 </tr>
                 <tr>
                   <td>Jueves-22-Ago</td><td>3072</td><td>6224 - 6225</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td>
@@ -88,8 +92,150 @@
                 </tr>
               </th>
       </tbody>
-   <script>
-      var miPastel=function(canvasId,width,height,valores) {
+      <script>
+        var nuevoId=function(canvasId,width,height,valores) {
+          this.canvas=document.getElementById(canvasId);
+          this.canvas.width=width;
+          this.canvas.height=height;
+          this.radio=Math.min(this.canvas.width/2,this.canvas.height/2)
+          this.context=this.canvas.getContext("2d");
+          this.valores=valores;
+          this.tamanoDonut=0;
+         
+          /**
+           * Dibuja un gráfico de pastel
+           */
+          this.dibujar=function() {
+            this.total=this.getTotal();
+            var valor=0;
+            var inicioAngulo=0;
+            var angulo=0;
+         
+            // creamos los quesos del pastel
+            for(var i in this.valores)
+            {
+              valor=valores[i]["valor"];
+              color=valores[i]["color"];
+              angulo=2*Math.PI*valor/this.total;
+         
+              this.context.fillStyle=color;
+              this.context.beginPath();
+              this.context.moveTo(this.canvas.width/2, this.canvas.height/2);
+              this.context.arc(this.canvas.width/2, this.canvas.height/2, this.radio, inicioAngulo, (inicioAngulo+angulo));
+              this.context.closePath();
+              this.context.fill();
+              inicioAngulo+=angulo;
+            }
+          }
+         
+          /**
+           * Dibuja un gráfico de pastel con una redonda en medio en modo de donut
+           * Tiene que recibir:
+           *	el tamaño de la redonda central (0 no hay redonda - 1 es todo)
+           *	el color de la redonda
+           */
+          this.dibujarDonut=function(tamano,color) {
+            this.tamanoDonut=tamano;
+            this.dibujar();
+         
+            // creamos un circulo del color recibido en medio
+            this.context.fillStyle=color;
+            this.context.beginPath();
+            this.context.moveTo(this.canvas.width/2, this.canvas.height/2);
+            this.context.arc(this.canvas.width/2, this.canvas.height/2, this.radio*tamano, 0, 2*Math.PI);
+            this.context.closePath();
+            this.context.fill();
+          }
+         
+          /**
+           * Pone el tanto por ciento de cada uno de los valores
+           * Tiene que recibir:
+           *	el color del texto
+           */
+          this.ponerPorCiento=function(color){
+            var valor=0;
+            var etiquetaX=0;
+            var etiquetaY=0;
+            var inicioAngulo=0;
+            var angulo=0;
+            var texto="red";
+            var incrementar=0;
+         
+            // si hemos dibujado un donut, tenemos que incrementar el valor del radio
+            // para que quede centrado
+            if(this.tamanoDonut)
+              incrementar=(this.radio*this.tamanoDonut)/2;
+         
+            this.context.font="bold 23pt Calibri";
+            this.context.fillStyle=color;
+            for(var i in this.valores)
+            {
+              valor=valores[i]["valor"];
+              angulo=2*Math.PI*valor/this.total;
+         
+              // calculamos la posición del texto
+              etiquetaX=this.canvas.width/2+(incrementar+this.radio/2)*Math.cos(inicioAngulo+angulo/2);
+              etiquetaY=this.canvas.height/2+(incrementar+this.radio/2)*Math.sin(inicioAngulo+angulo/2);
+         
+              texto=Math.round(100*valor/this.total);
+         
+              // movemos la posición unos pixels si estamos en la parte izquierda
+              // del pastel para que quede mas centrado
+              if(etiquetaX<this.canvas.width/2)
+                etiquetaX-=20;
+                etiquetaY-=-12;
+         
+              // ponemos los valores
+              this.context.beginPath();
+              this.context.fillText(texto+"%", etiquetaX, etiquetaY);
+              this.context.stroke();
+         
+              inicioAngulo+=angulo;
+            }
+          }
+         
+          /**
+           * Function que devuelve la suma del total de los valores recibidos en el array
+           */
+          this.getTotal=function() {
+            var total=0;
+            for(var i in this.valores)
+            {
+              total+=valores[i]["valor"];
+            }
+            return total;
+          }
+         
+          /**
+           * Función que devuelve una lista (<ul><li>) con la leyenda
+           * Tiene que recibir el id donde poner la leyenda
+           */
+          this.ponerLeyenda=function(leyenda2Id) {
+            var codigoHTML="<ul class='leyenda'>";
+         
+            for(var i in this.valores)
+            {
+              codigoHTML+="<li><span style='background-color:"+valores[i]["color"]+"'></span>"+i+"</li>";
+            }
+            codigoHTML+="</ul>";
+            document.getElementById(leyenda2Id).innerHTML=codigoHTML;
+          }
+        }
+         
+        // definimos los valores de nuestra gráfica
+        var valores={
+          "Truput Cobrado.":{valor:26,color:"green"},
+          "Gastos de Operación por cubrir.":{valor:74,color:"gray"}
+        }
+         
+        // generamos el segundo pastel
+        var pastel=new nuevoId("canvas2",400,300,valores);
+        pastel.dibujarDonut(0.3,"white");
+        pastel.ponerPorCiento("white");
+        pastel.ponerLeyenda("leyenda2");
+      </script>
+      <script>
+      var nuevoId=function(canvasId,width,height,valores) {
         this.canvas=document.getElementById(canvasId);
         this.canvas.width=width;
         this.canvas.height=height;
@@ -206,29 +352,29 @@
          * Función que devuelve una lista (<ul><li>) con la leyenda
          * Tiene que recibir el id donde poner la leyenda
          */
-        this.ponerLeyenda=function(leyendaId) {
-          var codigoHTML="<ul class='leyenda'>";
+        this.ponerLeyenda=function(TruputId) {
+          var codigoHTML="<ul class='Truput'>";
        
           for(var i in this.valores)
           {
             codigoHTML+="<li><span style='background-color:"+valores[i]["color"]+"'></span>"+i+"</li>";
           }
           codigoHTML+="</ul>";
-          document.getElementById(leyendaId).innerHTML=codigoHTML;
+          document.getElementById(TruputId).innerHTML=codigoHTML;
         }
       }
        
       // definimos los valores de nuestra gráfica
       var valores={
-        "Truput Cobrado.":{valor:26,color:"green"},
-        "Gastos de Operación por cubrir.":{valor:74,color:"gray"}
+        "Puntos del Mes: 14,694":{valor:60,color:"red"},
+        "Meta del Mes: 22,000":{valor:40,color:"gray"}
       }
        
       // generamos el segundo pastel
-      var pastel=new miPastel("canvas2",400,300,valores);
+      var pastel=new nuevoId("canvas3",300,300,valores);
       pastel.dibujarDonut(0.3,"white");
       pastel.ponerPorCiento("white");
-      pastel.ponerLeyenda("leyenda2");
+      pastel.ponerLeyenda("Truput");
     </script>
   </body>
 </html>
