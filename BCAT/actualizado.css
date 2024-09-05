@@ -91,36 +91,36 @@ h3{
 }
 
 .hoy {
-  -webkit-transform: rotate(0deg);
-          transform: rotate(0deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
-  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .hoy:before, .hoy:after {
-  color: blue;
+  color: red;
 }
 .hoy:before {
-  content: "0 de 2";
+  content: "1 de 2";
   background: white content-box;
-  -webkit-transform: rotate(-0deg);
-          transform: rotate(-0deg);
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 .hoy:after {
   content: "03/09/2024";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
   background: linear-gradient(transparent 50%, white 50%);
-  -webkit-transform: scale(1.1) rotate(-0deg);
-          transform: scale(1.1) rotate(-0deg);
+  -webkit-transform: scale(1.1) rotate(-90deg);
+          transform: scale(1.1) rotate(-90deg);
 }
 
 .manana {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
-  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, red), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, red 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .manana:before, .manana:after {
-  color: blue;
+  color: red;
 }
 .manana:before {
   content: "1 de 2";
@@ -213,8 +213,8 @@ table.tableizer-table {
 
 .tableizer-table {
   text-align: left;
-  margin-left: 7rem;
-  width: 90%;
+  margin-left: 6rem;
+  width: 100%;
   border-spacing: .5rem;
   background-color: white;
 }
@@ -289,7 +289,7 @@ table.tableizer-table {
 }
 
 .nav-ajusted_table {
-  max-width: 33%;
+  max-width: 35%;
   margin-bottom: 0;
   margin-top: -40rem;
 }
@@ -349,7 +349,7 @@ table.tableizer-table {
 
 .GOP{
   max-width: 800px;
-  margin-top: -870px;
+  margin-top: -860px;
   margin-left: 1rem;
 
 }
