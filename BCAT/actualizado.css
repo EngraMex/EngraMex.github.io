@@ -349,7 +349,7 @@ table.tableizer-table {
 
 .GOP{
   max-width: 800px;
-  margin-top: -860px;
+  margin-top: -800px;
   margin-left: 1rem;
 
 }
@@ -368,8 +368,8 @@ table.tableizer-table {
 }
 
 .CXP{
-  max-width: 340px;
-  margin-top: -270px;
+  max-width: 5000px;
+  margin-top: -300px;
   margin-left: 85rem;
 }
 
