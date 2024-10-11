@@ -137,49 +137,49 @@ h3{
 }
 
 .pasado {
-  -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
-  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, green 50%, rgba(255, 0, 0, 0.2) 50%);
 }
 .pasado:before, .pasado:after {
-  color: blue;
+  color: green;
 }
 .pasado:before {
   content: "1 de 2";
   background: white content-box;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 .pasado:after {
   content: "10/10/2024";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
   background: linear-gradient(transparent 50%, white 50%);
-  -webkit-transform: scale(1.1) rotate(-90deg);
-          transform: scale(1.1) rotate(-90deg);
+  -webkit-transform: scale(1.1) rotate(-180deg);
+          transform: scale(1.1) rotate(-180deg);
 }
 
 .pasadop {
-  -webkit-transform: rotate(50deg);
-          transform: rotate(50deg);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(255, 0, 0, 0.2)));
-  background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
+  -webkit-transform: rotate(120deg);
+          transform: rotate(120deg);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, orange), color-stop(50%, rgba(255, 0, 0, 0.2)));
+  background: linear-gradient(0deg, orange 50%, rgba(0, 0, 255, 0.2) 50%);
 }
 .pasadop:before, .pasadop:after {
-  color: blue;
+  color: orange;
 }
 .pasadop:before {
-  content: "1 de 3";
+  content: "2 de 3";
   background: white content-box;
-  -webkit-transform: rotate(-50deg);
-          transform: rotate(-50deg);
+  -webkit-transform: rotate(-120deg);
+          transform: rotate(-120deg);
 }
 .pasadop:after {
   content: "11/10/2024";
   background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
   background: linear-gradient(transparent 50%, white 50%);
-  -webkit-transform: scale(1.1) rotate(-50deg);
-          transform: scale(1.1) rotate(-50deg);
+  -webkit-transform: scale(1.1) rotate(-120deg);
+          transform: scale(1.1) rotate(-120deg);
 }
 
 .sem2 {
