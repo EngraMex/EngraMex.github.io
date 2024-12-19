@@ -192,7 +192,7 @@ h3{
   color: blue;
 }
 .sem2:before {
-  content: "0 DE 1";
+  content: "0 de 1";
   background: white content-box;
   -webkit-transform: rotate(-40deg);
           transform: rotate(-40deg);
