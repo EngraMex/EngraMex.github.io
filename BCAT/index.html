@@ -1,351 +1,84 @@
-<!DOCTYPE html >
-<html Lang="es">
-  <head>
-    <meta charset="utf-8"/>
-    <link rel="stylesheet" href="actualizado.css"/>
-    <title>Engramex/Plan de Produccion</title>
-    <link rel="shortcut icon" href="./logo engranes.png">
-  </head>
-  <h1>Programa de Produccion (Fecha Promesa)</h1>
-  <body> 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Engramex - Plan de Producción</title>
+    <link rel="stylesheet" href="actualizado.css">
+    <link rel="shortcut icon" href="logo_engranes.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <h1>Programa de Producción (Fecha Promesa)</h1>
+
+    <!-- Gráficos Circulares -->
     <div class="skills nav-ajusted">
-      <div class="circular-progress ayer"></div>
-      <div class="circular-progress hoy"></div>
-      <div class="circular-progress manana"></div>
-      <div class="circular-progress pasado"></div>
-      <div class="circular-progress pasadop"></div>
-      <div class="circular-progress sem2"></div>
+        <div class="circular-progress ayer"></div>
+        <div class="circular-progress hoy"></div>
+        <div class="circular-progress manana"></div>
+        <div class="circular-progress pasado"></div>
+        <div class="circular-progress pasadop"></div>
+        <div class="circular-progress sem2"></div>
     </div>
+
+    <!-- Ordenes Programadas -->
+    <h3 id="hide-table2">Órdenes Programadas de la Semana</h3>
+    
+    <div id="hide-table" class="pie animate nav-ajusted_mensual" style="--p:19;--c:red;">
+        Avance<br>Programa Producción<br>Mensual<br>6 de 31
     </div>
-      </div>
-      <h3 id="hide-table2">Ordenes Programadas de la Semana</h3>
-        <div id="hide-table" class="pie animate nav-ajusted_mensual" style="--p:10;--c:red;">Avance<br>programa produccion<br>Mensual<br>3 de 31</div>
-        <table id="hide-table1" class="tableizer-table nav-ajusted_table">
-        <div  class="circular-progress mensual"></div>
-          <div class="GOP" style="float: right;">
-             <canvas id="canvas3"></canvas>  
-             <div id="Truput" class="Truput"></div>
+
+    <div class="circular-progress mensual"></div>
+
+    <!-- Contenedor para gráficos -->
+    <div class="CXP">
+        <canvas id="canvas2"></canvas>
+        <div id="leyenda2" class="leyenda"></div>
+    </div>  
+
+    <!-- Velocímetro -->
+    <div class="velocimetro">
+        <div class="numeracion">
+            <span>0</span><span></span><span>450</span><span></span><span>850</span><span></span>
+            <span>1350</span><span></span><span>1800</span><span></span><span></span>
+        </div>
+        <div class="aguja" id="aguja"></div>
     </div>
+
+    <!-- Control de Velocidad -->
+    <label for="velocidad">Velocidad de Flujo:</label>
+    <input type="number" id="velocidad" min="0" max="100" value="0" onchange="actualizarVelocidad(this.value)">
+
+    <!-- Tabla de Producción -->
+    <table id="hide-table1" class="tableizer-table nav-ajusted_table">
+        <thead>
+            <tr>
+                <th class="encabezado">Fecha Promesa</th>
+                <th class="encabezado">OP</th>
+                <th class="encabezado">ODT</th>
+                <th class="encabezado">Estado</th>
+                <th class="encabezado">Amortiguador</th>
+            </tr>
+        </thead>
         <tbody>
-            <thead>
-              <th class="encabezado">Fecha Promesa</th>
-              <th class="encabezado">OP</th>
-              <th class="encabezado">ODT</th>
-              <th class="encabezado">Estado</th>
-              <th class="encabezado">Amortiguador</th>
-            </thead>
-                <tr>
-                  <td>Martes-04-Feb</td><td>3310</td><td>6734 - 6735</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td>
-                </tr>
-                <tr>
-                  <td>Martes-04-Feb</td><td>3340</td><td>6789</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td>
-                </tr>
-                <tr>
-                  <td>Miercoles-05-Feb</td><td>3308</td><td>6732</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td>
-                </tr>
-                <tr>
-                  <td>Miercoles-05-Feb</td><td>3299</td><td>6719</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td>
-                </tr>
-                <tr>
-                  <td>Jueves-04-Feb</td><td>3299</td><td>6719</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td>
-                </tr>
-                <tr>
-                  <td>Jueves-04-Feb</td><td>3299</td><td>6719</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td>
-                </tr>
-                <tr>
-                  <td>Viernes-05-Feb</td><td>3299</td><td>6719</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td>
-                </tr>
-                <tr>
-                  <td>Viernes-05-Feb</td><td>3299</td><td>6719</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td>
-                </tr>
-                <tr>
-                  <td>Lunes-10-Feb</td><td>3299</td><td>6719</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td>
-                </tr>
-              </th>
-      </tbody>
-      <script>
-        var nuevoId=function(canvasId,width,height,valores) {
-          this.canvas=document.getElementById(canvasId);
-          this.canvas.width=width;
-          this.canvas.height=height;
-          this.radio=Math.min(this.canvas.width/2,this.canvas.height/2)
-          this.context=this.canvas.getContext("2d");
-          this.valores=valores;
-          this.tamanoDonut=0;
-         
-          /**
-           * Dibuja un gráfico de pastel
-           */
-          this.dibujar=function() {
-            this.total=this.getTotal();
-            var valor=0;
-            var inicioAngulo=0;
-            var angulo=0;
-         
-            // creamos los quesos del pastel
-            for(var i in this.valores)
-            {
-              valor=valores[i]["valor"];
-              color=valores[i]["color"];
-              angulo=2*Math.PI*valor/this.total;
-         
-              this.context.fillStyle=color;
-              this.context.beginPath();
-              this.context.moveTo(this.canvas.width/2, this.canvas.height/2);
-              this.context.arc(this.canvas.width/2, this.canvas.height/2, this.radio, inicioAngulo, (inicioAngulo+angulo));
-              this.context.closePath();
-              this.context.fill();
-              inicioAngulo+=angulo;
-            }
-          }
-         
-          /**
-           * Dibuja un gráfico de pastel con una redonda en medio en modo de donut
-           * Tiene que recibir:
-           *	el tamaño de la redonda central (0 no hay redonda - 1 es todo)
-           *	el color de la redonda
-           */
-          this.dibujarDonut=function(tamano,color) {
-            this.tamanoDonut=tamano;
-            this.dibujar();
-         
-            // creamos un circulo del color recibido en medio
-            this.context.fillStyle=color;
-            this.context.beginPath();
-            this.context.moveTo(this.canvas.width/2, this.canvas.height/2);
-            this.context.arc(this.canvas.width/2, this.canvas.height/2, this.radio*tamano, 0, 2*Math.PI);
-            this.context.closePath();
-            this.context.fill();
-          }
-         
-          /**
-           * Pone el tanto por ciento de cada uno de los valores
-           * Tiene que recibir:
-           *	el color del texto
-           */
-          this.ponerPorCiento=function(color){
-            var valor=0;
-            var etiquetaX=0;
-            var etiquetaY=0;
-            var inicioAngulo=0;
-            var angulo=0;
-            var texto="red";
-            var incrementar=0;
-         
-            // si hemos dibujado un donut, tenemos que incrementar el valor del radio
-            // para que quede centrado
-            if(this.tamanoDonut)
-              incrementar=(this.radio*this.tamanoDonut)/2;
-         
-            this.context.font="bold 23pt Calibri";
-            this.context.fillStyle=color;
-            for(var i in this.valores)
-            {
-              valor=valores[i]["valor"];
-              angulo=2*Math.PI*valor/this.total;
-         
-              // calculamos la posición del texto
-              etiquetaX=this.canvas.width/2+(incrementar+this.radio/2)*Math.cos(inicioAngulo+angulo/2);
-              etiquetaY=this.canvas.height/2+(incrementar+this.radio/2)*Math.sin(inicioAngulo+angulo/2);
-         
-              texto=Math.round(100*valor/this.total);
-         
-              // movemos la posición unos pixels si estamos en la parte izquierda
-              // del pastel para que quede mas centrado
-              if(etiquetaX<this.canvas.width/2)
-                etiquetaX-=20;
-                etiquetaY-=-12;
-         
-              // ponemos los valores
-              this.context.beginPath();
-              this.context.fillText(texto+"%", etiquetaX, etiquetaY);
-              this.context.stroke();
-         
-              inicioAngulo+=angulo;
-            }
-          }
-         
-          /**
-           * Function que devuelve la suma del total de los valores recibidos en el array
-           */
-          this.getTotal=function() {
-            var total=0;
-            for(var i in this.valores)
-            {
-              total+=valores[i]["valor"];
-            }
-            return total;
-          }
-         
-          /**
-           * Función que devuelve una lista (<ul><li>) con la leyenda
-           * Tiene que recibir el id donde poner la leyenda
-           */
-          this.ponerLeyenda=function(leyenda2Id) {
-            var codigoHTML="<ul class='leyenda'>";
-         
-            for(var i in this.valores)
-            {
-              codigoHTML+="<li><span style='background-color:"+valores[i]["color"]+"'></span>"+i+"</li>";
-            }
-            codigoHTML+="</ul>";
-            document.getElementById(leyenda2Id).innerHTML=codigoHTML;
-          }
-        }
-         
-        // definimos los valores de nuestra gráfica
-        var valores={
-          "Puntos del Mes: 16504":{valor:0,color:"blue"},
-          "Meta del Mes: 18486":{valor:11,color:"gray"}
-        }
-         
-        // generamos el segundo pastel
-        var pastel=new nuevoId("canvas2",400,300,valores);
-        pastel.dibujarDonut(0.3,"white");
-        pastel.ponerPorCiento("white");
-        pastel.ponerLeyenda("leyenda2");
-      </script>
-      <script>
-      var nuevoId=function(canvasId,width,height,valores) {
-        this.canvas=document.getElementById(canvasId);
-        this.canvas.width=width;
-        this.canvas.height=height;
-        this.radio=Math.min(this.canvas.width/2,this.canvas.height/2)
-        this.context=this.canvas.getContext("2d");
-        this.valores=valores;
-        this.tamanoDonut=0;
-       
-        /**
-         * Dibuja un gráfico de pastel
-         */
-        this.dibujar=function() {
-          this.total=this.getTotal();
-          var valor=0;
-          var inicioAngulo=0;
-          var angulo=0;
-       
-          // creamos los quesos del pastel
-          for(var i in this.valores)
-          {
-            valor=valores[i]["valor"];
-            color=valores[i]["color"];
-            angulo=2*Math.PI*valor/this.total;
-       
-            this.context.fillStyle=color;
-            this.context.beginPath();
-            this.context.moveTo(this.canvas.width/2, this.canvas.height/2);
-            this.context.arc(this.canvas.width/2, this.canvas.height/2, this.radio, inicioAngulo, (inicioAngulo+angulo));
-            this.context.closePath();
-            this.context.fill();
-            inicioAngulo+=angulo;
-          }
-        }
-       
-        /**
-         * Dibuja un gráfico de pastel con una redonda en medio en modo de donut
-         * Tiene que recibir:
-         *	el tamaño de la redonda central (0 no hay redonda - 1 es todo)
-         *	el color de la redonda
-         */
-        this.dibujarDonut=function(tamano,color) {
-          this.tamanoDonut=tamano;
-          this.dibujar();
-       
-          // creamos un circulo del color recibido en medio
-          this.context.fillStyle=color;
-          this.context.beginPath();
-          this.context.moveTo(this.canvas.width/2, this.canvas.height/2);
-          this.context.arc(this.canvas.width/2, this.canvas.height/2, this.radio*tamano, 0, 2*Math.PI);
-          this.context.closePath();
-          this.context.fill();
-        }
-       
-        /**
-         * Pone el tanto por ciento de cada uno de los valores
-         * Tiene que recibir:
-         *	el color del texto 
-         */
-        this.ponerPorCiento=function(color){
-          var valor=0;
-          var etiquetaX=0;
-          var etiquetaY=0;
-          var inicioAngulo=0;
-          var angulo=0;
-          var texto="red";
-          var incrementar=0;
-       
-          // si hemos dibujado un donut, tenemos que incrementar el valor del radio
-          // para que quede centrado
-          if(this.tamanoDonut)
-            incrementar=(this.radio*this.tamanoDonut)/2;
-       
-          this.context.font="bold 23pt Calibri";
-          this.context.fillStyle=color;
-          for(var i in this.valores)
-          {
-            valor=valores[i]["valor"];
-            angulo=2*Math.PI*valor/this.total;
-       
-            // calculamos la posición del texto
-            etiquetaX=this.canvas.width/2+(incrementar+this.radio/2)*Math.cos(inicioAngulo+angulo/2);
-            etiquetaY=this.canvas.height/2+(incrementar+this.radio/2)*Math.sin(inicioAngulo+angulo/2);
-       
-            texto=Math.round(100*valor/this.total);
-       
-            // movemos la posición unos pixels si estamos en la parte izquierda
-            // del pastel para que quede mas centrado
-            if(etiquetaX<this.canvas.width/2)
-              etiquetaX-=20;
-              etiquetaY-=-12;
-       
-            // ponemos los valores
-            this.context.beginPath();
-            this.context.fillText(texto+"%", etiquetaX, etiquetaY);
-            this.context.stroke();
-       
-            inicioAngulo+=angulo;
-          }
-        }
-       
-        /**
-         * Function que devuelve la suma del total de los valores recibidos en el array
-         */
-        this.getTotal=function() {
-          var total=0;
-          for(var i in this.valores)
-          {
-            total+=valores[i]["valor"];
-          }
-          return total;
-        }
-       
-        /**
-         * Función que devuelve una lista (<ul><li>) con la leyenda
-         * Tiene que recibir el id donde poner la leyenda
-         */
-        this.ponerLeyenda=function(TruputId) {
-          var codigoHTML="<ul class='Truput'>";
-       
-          for(var i in this.valores)
-          {
-            codigoHTML+="<li><span style='background-color:"+valores[i]["color"]+"'></span>"+i+"</li>";
-          }
-          codigoHTML+="</ul>";
-          document.getElementById(TruputId).innerHTML=codigoHTML;
-        }
-      }
-       
-      // definimos los valores de nuestra gráfica
-      var valores={
-        "Truput Cobrado.":{valor:7,color:"green"},
-        "Gastos de Operación por cubrir.":{valor:93,color:"gray"}
-      }
-       
-      // generamos el segundo pastel
-      var pastel=new nuevoId("canvas3",300,300,valores);
-      pastel.dibujarDonut(0.3,"white");
-      pastel.ponerPorCiento("white");
-      pastel.ponerLeyenda("Truput");
-    </script>
-  </body>
+            <tr><td>Martes-04-Feb</td><td>3310</td><td>6734 - 6735</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td></tr>
+            <tr><td>Martes-04-Feb</td><td>3340</td><td>6789</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td></tr>
+            <tr><td>Miercoles-05-Feb</td><td>3308</td><td>6732</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td></tr>
+            <tr><td>Miércoles-05-Feb</td><td>3299</td><td>6719</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td></tr>
+            <tr><td>Jueves-06-Feb</td><td>3304</td><td>6725</td><td class="RED">RE-PLAN 07/02</td><td class="AMORR"></td></tr>
+            <tr><td>Jueves-06-Feb</td><td>3334</td><td>6781</td><td class="RED">RE-PLAN 07/02</td><td class="AMORR"></td></tr>
+            <tr><td>Viernes-07-Feb</td><td>3306</td><td>6727 - 6729</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td></tr>
+            <tr><td>Viernes-07-Feb</td><td>3333</td><td>6778</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td></tr>
+            <tr><td>Lunes-10-Feb</td><td>3321</td><td>6761 - 6762</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td></tr>
+        </tbody>
+    </table>
+
+    <!-- Gráficos de Proyectos Diarios -->
+    <section class="content">
+        <h4>PROYECTOS DIARIOS</h4>
+        <canvas id="ProyectosEntregados" width="1100" height="300"></canvas>
+    </section>
+
+    <script src="index.js"></script>
+</body>
 </html>
