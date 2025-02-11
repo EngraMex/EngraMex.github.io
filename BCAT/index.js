@@ -93,8 +93,8 @@ var nuevoId = function (canvasId, width, height, valores) {
 };
 
 var valores = {
-    "Truput Cobrado": { valor: 7, color: "green" },
-    "Gastos de Operacion por Cubrir": { valor: 93, color: "gray" },
+    "Truput Cobrado": { valor: 10, color: "green" },
+    "Gastos de Operacion por Cubrir": { valor: 90, color: "gray" },
 };
 
 var pastel = new nuevoId("canvas2", 400, 300, valores);
