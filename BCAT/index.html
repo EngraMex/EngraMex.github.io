@@ -2,6 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Engramex - Plan de Producción</title>
     <link rel="stylesheet" href="actualizado.css">
     <link rel="shortcut icon" href="logo_engranes.png">
@@ -9,73 +10,79 @@
 </head>
 
 <body>
-    <h1>Programa de Producción (Fecha Promesa)</h1>
+    <div class="container">
+        <h1>Programa de Producción (Fecha Promesa)</h1>
 
-    <!-- Gráficos Circulares -->
-    <div class="skills nav-ajusted">
-        <div class="circular-progress ayer"></div>
-        <div class="circular-progress hoy"></div>
-        <div class="circular-progress manana"></div>
-        <div class="circular-progress pasado"></div>
-        <div class="circular-progress pasadop"></div>
-        <div class="circular-progress sem2"></div>
-    </div>
-
-    <!-- Ordenes Programadas -->
-    <h3 id="hide-table2">Órdenes Programadas de la Semana</h3>
-    
-    <div id="hide-table" class="pie animate nav-ajusted_mensual" style="--p:19;--c:red;">
-        Avance<br>Programa Producción<br>Mensual<br>6 de 31
-    </div>
-
-    <div class="circular-progress mensual"></div>
-
-    <!-- Contenedor para gráficos -->
-    <div class="CXP">
-        <canvas id="canvas2"></canvas>
-        <div id="leyenda2" class="leyenda"></div>
-    </div>  
-
-    <!-- Velocímetro -->
-    <div class="velocimetro">
-        <div class="numeracion">
-            <span>0</span><span></span><span>450</span><span></span><span>850</span><span></span>
-            <span>1350</span><span></span><span>1800</span><span></span><span></span>
+        <!-- Gráficos Circulares -->
+        <div class="skills nav-ajusted">
+            <div class="circular-progress ayer"></div>
+            <div class="circular-progress hoy"></div>
+            <div class="circular-progress manana"></div>
+            <div class="circular-progress pasado"></div>
+            <div class="circular-progress pasadop"></div>
+            <div class="circular-progress sem2"></div>
         </div>
-        <div class="aguja" id="aguja"></div>
+
+        <h3 id="hide-table2">Órdenes Programadas de la Semana</h3>
+        
+        <div class="responsive-chart">
+            <div id="hide-table" class="pie animate nav-ajusted_mensual" style="--p:39;--c:red;">
+                Avance<br>Programa Producción<br>Mensual<br>12 de 31
+            </div>
+            <div class="circular-progress mensual"></div>
+        </div>
+
+        <!-- Contenedor para gráficos -->
+        <div class="CXP">
+            <canvas id="canvas2"></canvas>
+            <div id="leyenda2" class="leyenda"></div>
+        </div>  
+
+        <!-- Velocímetro -->
+        <div class="velocimetro-container">
+            <div class="velocimetro">
+                <div class="numeracion">
+                    <span>0</span><span></span><span>450</span><span></span><span>850</span><span></span>
+                    <span>1350</span><span></span><span>1800</span><span></span><span></span>
+                </div>
+                <div class="aguja" id="aguja"></div>
+            </div>
+        </div>
+
+        <!-- Control de Velocidad -->
+        <label for="velocidad">Velocidad de Flujo:</label>
+        <input type="number" id="velocidad" min="0" max="100" value="0" onchange="actualizarVelocidad(this.value)">
+
+        <!-- Tabla de Producción -->
+        <div class="table-container">
+            <table id="hide-table1" class="tableizer-table nav-ajusted_table">
+                <thead>
+                    <tr>
+                        <th>Fecha Promesa</th>
+                        <th>OP</th>
+                        <th>ODT</th>
+                        <th>Estado</th>
+                        <th>Amortiguador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Lunes-10-Feb</td><td>3321</td><td>6761 - 6762</td><td class="RED">RE-PLAN 20/02</td><td class="AMORR"></td></tr>
+                    <tr><td>Martes-11-Feb</td><td>3321</td><td>6776</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td></tr>
+                    <tr><td>Miercoles-12-Feb</td><td>3295</td><td>6711 - 6712</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td></tr>
+                    <tr><td>Jueves-13-Feb</td><td>3317</td><td>6746</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td></tr>
+                    <tr><td>Jueves-13-Feb</td><td>3319</td><td>6748 - 6755</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td></tr>
+                    <tr><td>Viernes-14-Feb</td><td>3263</td><td>6662 - 6664</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td></tr>
+                    <tr><td>Lunes-17-Feb</td><td>3303</td><td>6723 - 6724</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Gráficos de Proyectos Diarios -->
+        <section class="content">
+            <h4>PROYECTOS DIARIOS</h4>
+            <canvas id="ProyectosEntregados"></canvas>
+        </section>
     </div>
-
-    <!-- Control de Velocidad -->
-    <label for="velocidad">Velocidad de Flujo:</label>
-    <input type="number" id="velocidad" min="0" max="100" value="0" onchange="actualizarVelocidad(this.value)">
-
-    <!-- Tabla de Producción -->
-    <table id="hide-table1" class="tableizer-table nav-ajusted_table">
-        <thead>
-            <tr>
-                <th class="encabezado">Fecha Promesa</th>
-                <th class="encabezado">OP</th>
-                <th class="encabezado">ODT</th>
-                <th class="encabezado">Estado</th>
-                <th class="encabezado">Amortiguador</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr><td>Lunes-10-Feb</td><td>3321</td><td>6761 - 6762</td><td class="RED">RE-PLAN 20/02</td><td class="AMORR"></td></tr>
-            <tr><td>Martes-11-Feb</td><td>3321</td><td>6776</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td></tr>
-            <tr><td>Miercoles-12-Feb</td><td>3295</td><td>6711 - 6712</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td></tr>
-            <tr><td>Jueves-13-Feb</td><td>3317</td><td>6746</td><td class="BLUE">EN PROCESO</td><td class="AMORR"></td></tr>
-            <tr><td>Jueves-13-Feb</td><td>3319</td><td>6748 - 6755</td><td class="BLUE">EN PROCESO</td><td class="AMORR"></td></tr>
-            <tr><td>Viernes-14-Feb</td><td>3263</td><td>6662 - 6664</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td></tr>
-            <tr><td>Lunes-17-Feb</td><td>3303</td><td>6723 - 6724</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td></tr>
-        </tbody>
-    </table>
-
-    <!-- Gráficos de Proyectos Diarios -->
-    <section class="content">
-        <h4>PROYECTOS DIARIOS</h4>
-        <canvas id="ProyectosEntregados" width="1100" height="300"></canvas>
-    </section>
 
     <script src="index.js"></script>
 </body>
