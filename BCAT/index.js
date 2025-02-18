@@ -141,7 +141,7 @@ var myChart = new Chart(ctx, {
                        2,  /* W 12 */
                        2,  /* J 13 */
                        4,  /* V 14 */
-                       0,  /* L 17 */
+                       2,  /* L 17 */
                        0,  /* M 18 */
                        0,  /* W 19 */
                        0,  /* J 20 */
@@ -157,7 +157,7 @@ var myChart = new Chart(ctx, {
                                   "rgba(16, 255, 0, 0.3)",   // VERDE W 12
                                   "rgba(16, 255, 0, 0.3)",   // BERDE J 13
                                   "rgba(40, 202, 16, 0.55)",   // VERDE V 14
-                                  "rgba(255, 0, 0, 0.2)",   // ROJO L 17
+                                  "rgba(16, 255, 0, 0.3)",   // VERDE L 17
                                   "rgba(255, 0, 0, 0.2)",   // ROJO M 18
                                   "rgba(255, 0, 0, 0.2)",   // ROJO W 19
                                   "rgba(255, 0, 0, 0.2)",   // ROJO J 20
@@ -174,7 +174,7 @@ var myChart = new Chart(ctx, {
                                   "rgba(16, 255, 0, 1)",   // VERDE W 12
                                   "rgba(16, 255, 0, 1)",   // VERDE J 13
                                   "rgba(40, 202, 16, 1)",   // VERDE V 14
-                                  "rgba(255, 0, 0, 1)",   // ROJO L 17
+                                  "rgba(16, 255, 0,1)",   // VERDE L 17
                                   "rgba(255, 0, 0, 1)",   // ROJO M 18
                                   "rgba(255, 0, 0, 1)",   // ROJO W 19
                                   "rgba(255, 0, 0, 1)",   // ROJO J 20
