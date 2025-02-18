@@ -93,8 +93,8 @@ var nuevoId = function (canvasId, width, height, valores) {
 };
 
 var valores = {
-    "Truput Cobrado": { valor: 28, color: "green" },
-    "Gastos de Operacion por Cubrir": { valor: 72, color: "gray" },
+    "Truput Cobrado": { valor: 44, color: "green" },
+    "Gastos de Operacion por Cubrir": { valor: 56, color: "gray" },
 };
 
 var pastel = new nuevoId("canvas2", 400, 300, valores);
@@ -142,7 +142,7 @@ var myChart = new Chart(ctx, {
                        2,  /* J 13 */
                        4,  /* V 14 */
                        2,  /* L 17 */
-                       0,  /* M 18 */
+                       2,  /* M 18 */
                        0,  /* W 19 */
                        0,  /* J 20 */
                        0,  /* V 21 */ ],
@@ -158,7 +158,7 @@ var myChart = new Chart(ctx, {
                                   "rgba(16, 255, 0, 0.3)",   // BERDE J 13
                                   "rgba(40, 202, 16, 0.55)",   // VERDE V 14
                                   "rgba(16, 255, 0, 0.3)",   // VERDE L 17
-                                  "rgba(255, 0, 0, 0.2)",   // ROJO M 18
+                                  "rgba(16, 255, 0, 0.3)",   // VERDE M 18
                                   "rgba(255, 0, 0, 0.2)",   // ROJO W 19
                                   "rgba(255, 0, 0, 0.2)",   // ROJO J 20
                                   "rgba(255, 0, 0, 0.2)",   // ROJO V 21
@@ -175,7 +175,7 @@ var myChart = new Chart(ctx, {
                                   "rgba(16, 255, 0, 1)",   // VERDE J 13
                                   "rgba(40, 202, 16, 1)",   // VERDE V 14
                                   "rgba(16, 255, 0,1)",   // VERDE L 17
-                                  "rgba(255, 0, 0, 1)",   // ROJO M 18
+                                  "rgba(16, 255, 0, 1)",   // VERDE M 18
                                   "rgba(255, 0, 0, 1)",   // ROJO W 19
                                   "rgba(255, 0, 0, 1)",   // ROJO J 20
                                   "rgba(255, 0, 0, 1)",   // ROJO V 21
