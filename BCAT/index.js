@@ -143,8 +143,8 @@ var myChart = new Chart(ctx, {
                        4,  /* V 14 */
                        2,  /* L 17 */
                        2,  /* M 18 */
-                       0,  /* W 19 */
-                       0,  /* J 20 */
+                       2,  /* W 19 */
+                       2,  /* J 20 */
                        0,  /* V 21 */ ],
                 backgroundColor: [
                                   "rgba(255, 0, 0, 0.2)",   // ROJO L 03
@@ -159,8 +159,8 @@ var myChart = new Chart(ctx, {
                                   "rgba(40, 202, 16, 0.55)",   // VERDE V 14
                                   "rgba(16, 255, 0, 0.3)",   // VERDE L 17
                                   "rgba(16, 255, 0, 0.3)",   // VERDE M 18
-                                  "rgba(255, 0, 0, 0.2)",   // ROJO W 19
-                                  "rgba(255, 0, 0, 0.2)",   // ROJO J 20
+                                  "rgba(16, 255, 0, 0.3)",   // ROJO W 19
+                                  "rgba(16, 255, 0, 0.3)",   // ROJO J 20
                                   "rgba(255, 0, 0, 0.2)",   // ROJO V 21
                                   ],
                 borderColor: [                                 
@@ -176,8 +176,8 @@ var myChart = new Chart(ctx, {
                                   "rgba(40, 202, 16, 1)",   // VERDE V 14
                                   "rgba(16, 255, 0,1)",   // VERDE L 17
                                   "rgba(16, 255, 0, 1)",   // VERDE M 18
-                                  "rgba(255, 0, 0, 1)",   // ROJO W 19
-                                  "rgba(255, 0, 0, 1)",   // ROJO J 20
+                                  "rgba(16, 255, 0, 1)",   // ROJO W 19
+                                  "rgba(16, 255, 0, 1)",   // ROJO J 20
                                   "rgba(255, 0, 0, 1)",   // ROJO V 21
                     ],
                 borderWidth: 2,
