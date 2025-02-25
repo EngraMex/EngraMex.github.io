@@ -93,8 +93,8 @@ var nuevoId = function (canvasId, width, height, valores) {
 };
 
 var valores = {
-    "Truput Cobrado": { valor: 44, color: "green" },
-    "Gastos de Operacion por Cubrir": { valor: 56, color: "gray" },
+    "Truput Cobrado": { valor: 53, color: "green" },
+    "Gastos de Operacion por Cubrir": { valor: 47, color: "gray" },
 };
 
 var pastel = new nuevoId("canvas2", 400, 300, valores);
@@ -127,58 +127,45 @@ var ctx = document.getElementById("ProyectosEntregados");
 var myChart = new Chart(ctx, {
     type: "bar",
     data: {
-        labels: [ "L 03", "M 04", "W 05", "J 06", "V 07","L 10", "M 11", "W 12", "J 13", "V 14", "L 17", "M 18", "W 19", "J 20", "V 21",  ],
+        labels: [ "L 10", "M 11", "W 12", "J 13", "V 14", "L 17", "M 18", "W 19", "J 20", "V 21", "L 24", "M 25", "W 26", "J 27", "V 28"  ],
         datasets: [
             {
                 label: "PROYECTOS ENTREGADOS",
-                data: [0,  /* L 03 */
-                       3,  /* M 04 */
-                       3,  /* W 05 */
-                       1,  /* J 06 */
-                       3,  /* V 07 */
-                       2,  /* L 10 */
-                       3,  /* M 11 */
-                       2,  /* W 12 */
-                       2,  /* J 13 */
-                       4,  /* V 14 */
-                       2,  /* L 17 */
-                       2,  /* M 18 */
-                       2,  /* W 19 */
-                       2,  /* J 20 */
-                       0,  /* V 21 */ ],
+                data: [
+                    2,  /* L 10 */
+                    3,  /* M 11 */
+                    2,  /* W 12 */
+                    2,  /* J 13 */
+                    4,  /* V 14 */
+                    2,  /* L 17 */
+                    2,  /* M 18 */
+                    2,  /* W 19 */
+                    2,  /* J 20 */
+                    1,  /* V 21 */
+                     ],
                 backgroundColor: [
-                                  "rgba(16, 255, 0, 0.3)",   // ROJO L 03
-                                  "rgba(57, 202, 36, 0.47) ",  // VERDE M 04
-                                  "rgba(57, 202, 36, 0.47) ",  // VERDE W 05
-                                  "rgba(231, 255, 0, 0.2)", // AMARILLO J 06
-                                  "rgba(57, 202, 36, 0.47) ",  // VERDE v 07
-                                  "rgba(16, 255, 0, 0.3)",   // VERDE L 10
-                                  "rgba(57, 202, 36, 0.47) ",   // VERDE M 11
-                                  "rgba(16, 255, 0, 0.3)",   // VERDE W 12
-                                  "rgba(16, 255, 0, 0.3)",   // BERDE J 13
-                                  "rgba(40, 202, 16, 0.55)",   // VERDE V 14
-                                  "rgba(16, 255, 0, 0.3)",   // VERDE L 17
-                                  "rgba(16, 255, 0, 0.3)",   // VERDE M 18
-                                  "rgba(16, 255, 0, 0.3)",   // ROJO W 19
-                                  "rgba(16, 255, 0, 0.3)",   // ROJO J 20
-                                  "rgba(255, 0, 0, 0.2)",   // ROJO V 21
+                                    "rgba(16, 255, 0, 0.3)",   // VERDE L 10
+                                    "rgba(57, 202, 36, 0.47) ",   // VERDE M 11
+                                    "rgba(16, 255, 0, 0.3)",   // VERDE W 12
+                                    "rgba(16, 255, 0, 0.3)",   // BERDE J 13
+                                    "rgba(40, 202, 16, 0.55)",   // VERDE V 14
+                                    "rgba(16, 255, 0, 0.3)",   // VERDE L 17
+                                    "rgba(16, 255, 0, 0.3)",   // VERDE M 18
+                                    "rgba(16, 255, 0, 0.3)",   // ROJO W 19
+                                    "rgba(16, 255, 0, 0.3)",   // ROJO J 20
+                                    "rgba(235, 248, 5, 0.3)",   // ROJO V 21
                                   ],
-                borderColor: [                                 
-                                  "rgba(16, 255, 0, 1)",   // ROJO L 03
-                                  "rgba(57, 202, 36, 1)",  // VERDE M 04
-                                  "rgba(57, 202, 36, 1)",  // VERDE W 05
-                                  "rgba(231, 255, 0, 1)", // AMARILLO J 06
-                                  "rgba(57, 202, 36, 1)",  // VERDE v 07
-                                  "rgba(16, 255, 0, 1)",   // VERDE L 10
-                                  "rgba(57, 202, 36, 1)",  // VERDE M 11
-                                  "rgba(16, 255, 0, 1)",   // VERDE W 12
-                                  "rgba(16, 255, 0, 1)",   // VERDE J 13
-                                  "rgba(40, 202, 16, 1)",   // VERDE V 14
-                                  "rgba(16, 255, 0,1)",   // VERDE L 17
-                                  "rgba(16, 255, 0, 1)",   // VERDE M 18
-                                  "rgba(16, 255, 0, 1)",   // ROJO W 19
-                                  "rgba(16, 255, 0, 1)",   // ROJO J 20
-                                  "rgba(255, 0, 0, 1)",   // ROJO V 21
+                borderColor: [ 
+                                    "rgba(16, 255, 0, 1)",   // VERDE L 10
+                                    "rgba(57, 202, 36, 1)",  // VERDE M 11
+                                    "rgba(16, 255, 0, 1)",   // VERDE W 12
+                                    "rgba(16, 255, 0, 1)",   // VERDE J 13
+                                    "rgba(40, 202, 16, 1)",   // VERDE V 14
+                                    "rgba(16, 255, 0,1)",   // VERDE L 17
+                                    "rgba(16, 255, 0, 1)",   // VERDE M 18
+                                    "rgba(16, 255, 0, 1)",   // ROJO W 19
+                                    "rgba(16, 255, 0, 1)",   // ROJO J 20
+                                    "rgba(235, 248, 5, 1)",   // ROJO V 21
                     ],
                 borderWidth: 2,
             },
