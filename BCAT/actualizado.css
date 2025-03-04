@@ -77,13 +77,13 @@ background: linear-gradient(0deg, green 50%, rgba(0, 0, 255, 0.2) 50%);
 color: green;
 }
 .ayer:before {
-content: "2 de 2";
+content: "1 de 1";
 background: white content-box;
 -webkit-transform: rotate(-180deg);
       transform: rotate(-180deg);
 }
 .ayer:after {
-content: "24/02/2024";
+content: "03/03/2024";
 background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
 background: linear-gradient(transparent 50%, white 50%);
 -webkit-transform: scale(1.1) rotate(-180deg);
@@ -91,49 +91,49 @@ background: linear-gradient(transparent 50%, white 50%);
 }
 
 .hoy {
--webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
-background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(255, 0, 0, 0.2)));
-background: linear-gradient(0deg, green 50%, rgba(255, 0, 0, 0.2) 50%);
+-webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
+background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
 }
 .hoy:before, .hoy:after {
-color: green;
+color: blue;
 }
 .hoy:before {
-content: "2 de 2";
+content: "0 de 1";
 background: white content-box;
--webkit-transform: rotate(-180deg);
-      transform: rotate(-180deg);
+-webkit-transform: rotate(-0deg);
+      transform: rotate(-0deg);
 }
 .hoy:after {
-content: "25/02/2024";
+content: "04/03/2024";
 background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
 background: linear-gradient(transparent 50%, white 50%);
--webkit-transform: scale(1.1) rotate(-180deg);
-      transform: scale(1.1) rotate(-180deg);
+-webkit-transform: scale(1.1) rotate(-0deg);
+      transform: scale(1.1) rotate(-0deg);
 }
 
 .manana {
--webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
-background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(0, 0, 255, 0.2)));
-background: linear-gradient(0deg, green 50%, rgba(0, 0, 255, 0.2) 50%);
+-webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
+background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
 }
 .manana:before, .manana:after {
-color: green;
+color: blue;
 }
 .manana:before {
-content: "3 de 3";
+content: "0 de 0";
 background: white content-box;
--webkit-transform: rotate(-180deg);
-      transform: rotate(-180deg);
+-webkit-transform: rotate(-0deg);
+      transform: rotate(-0deg);
 }
 .manana:after {
-content: "26/02/2024";
+content: "05/03/2024";
 background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
 background: linear-gradient(transparent 50%, white 50%);
--webkit-transform: scale(1.1) rotate(-180deg);
-      transform: scale(1.1) rotate(-180deg);
+-webkit-transform: scale(1.1) rotate(-0deg);
+      transform: scale(1.1) rotate(-0deg);
 }
 
 .pasado {
@@ -146,13 +146,13 @@ background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
 color: blue;
 }
 .pasado:before {
-content: "0 de 2";
+content: "0 de 1";
 background: white content-box;
 -webkit-transform: rotate(-0deg);
       transform: rotate(-0deg);
 }
 .pasado:after {
-content: "27/02/2024";
+content: "06/03/2024";
 background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
 background: linear-gradient(transparent 50%, white 50%);
 -webkit-transform: scale(1.1) rotate(-0deg);
@@ -160,49 +160,49 @@ background: linear-gradient(transparent 50%, white 50%);
 }
 
 .pasadop {
--webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
-background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(0, 0, 255, 0.2)));
-background: linear-gradient(0deg, green 50%, rgba(0, 0, 255, 0.2) 50%);
+-webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
+background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
 }
 .pasadop:before, .pasadop:after {
-color: green;
+color: blue;
 }
 .pasadop:before {
-content: "2 de 2";
+content: "0 de 3";
 background: white content-box;
--webkit-transform: rotate(-180deg);
-      transform: rotate(-180deg);
+-webkit-transform: rotate(-0deg);
+      transform: rotate(-0deg);
 }
 .pasadop:after {
-content: "28/02/2024";
+content: "07/03/2024";
 background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
 background: linear-gradient(transparent 50%, white 50%);
--webkit-transform: scale(1.1) rotate(-180deg);
-      transform: scale(1.1) rotate(-180deg);
+-webkit-transform: scale(1.1) rotate(-0deg);
+      transform: scale(1.1) rotate(-0deg);
 }
 
 .sem2 {
--webkit-transform: rotate(180deg);
-      transform: rotate(180deg);
-background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, green), color-stop(50%, rgba(0, 0, 255, 0.2)));
-background: linear-gradient(0deg, green 50%, rgba(0, 0, 255, 0.2) 50%);
+-webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 255, 0.2)));
+background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
 }
 .sem2:before, .sem2:after {
-color: green;
+color: blue;
 }
 .sem2:before {
-content: "1 de 2";
+content: "0 de 3";
 background: white content-box;
--webkit-transform: rotate(-180deg);
-      transform: rotate(-180deg);
+-webkit-transform: rotate(-0deg);
+      transform: rotate(-0deg);
 }
 .sem2:after {
-content: "24/02/2024";
+content: "10/03/2024";
 background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
 background: linear-gradient(transparent 50%, white 50%);
--webkit-transform: scale(1.1) rotate(-180deg);
-      transform: scale(1.1) rotate(-180deg);
+-webkit-transform: scale(1.1) rotate(-0deg);
+      transform: scale(1.1) rotate(-0deg);
 }
 
 table.tableizer-table {
