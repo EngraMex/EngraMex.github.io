@@ -93,8 +93,8 @@ var nuevoId = function (canvasId, width, height, valores) {
 };
 
 var valores = {
-    "Truput Cobrado": { valor: 0, color: "green" },
-    "Gastos de Operacion por Cubrir": { valor: 100, color: "gray" },
+    "Truput Cobrado": { valor: 8, color: "green" },
+    "Gastos de Operacion por Cubrir": { valor: 92, color: "gray" },
 };
 
 var pastel = new nuevoId("canvas2", 400, 300, valores);
@@ -134,8 +134,8 @@ var myChart = new Chart(ctx, {
                 data: [
                     1,  /* L 03 */
                     0,  /* M 04 */
-                    0,  /* W 05 */
-                    0,  /* J 06 */
+                    3,  /* W 05 */
+                    1,  /* J 06 */
                     0,  /* V 07 */
                     0,  /* L 10 */
                     0,  /* M 11 */
@@ -149,7 +149,7 @@ var myChart = new Chart(ctx, {
                                     "rgba(235, 248, 5, 0.3)",   // ROJO V 14
                                     "rgba(57, 202, 36, 0.47) ",   // VERDE 04 11
                                     "rgba(16, 255, 0, 0.3)",   // VERDE W 05
-                                    "rgba(16, 255, 0, 0.3)",   // BERDE J 06
+                                    "rgba(235, 248, 5, 0.3)",   // ROJO V 14
                                     "rgba(40, 202, 16, 0.55)",   // VERDE V 07
                                     "rgba(16, 255, 0, 0.3)",   // VERDE L 10
                                     "rgba(16, 255, 0, 0.3)",   // VERDE M 11
@@ -163,7 +163,7 @@ var myChart = new Chart(ctx, {
                                     "rgba(235, 248, 5, 1)",   // ROJO V 14
                                     "rgba(57, 202, 36, 1)",  // VERDE M 04
                                     "rgba(16, 255, 0, 1)",   // VERDE W 05
-                                    "rgba(16, 255, 0, 1)",   // VERDE J 06
+                                    "rgba(235, 248, 5, 1)",   // ROJO V 14
                                     "rgba(40, 202, 16, 1)",   // VERDE V 07
                                     "rgba(16, 255, 0,1)",   // VERDE L 10
                                     "rgba(16, 255, 0, 1)",   // VERDE M 11
