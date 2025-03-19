@@ -143,7 +143,7 @@ var myChart = new Chart(ctx, {
                     2,  /* J 13 */
                     1,  /* V 14 */
                     0,  /* L 17 */
-                    0,  /* M 18 */
+                    1,  /* M 18 */
                      ],
                 backgroundColor: [
                                     "rgba(235, 248, 5, 0.3)",   // ROJO V 14
