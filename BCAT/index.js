@@ -93,8 +93,8 @@ var nuevoId = function (canvasId, width, height, valores) {
 };
 
 var valores = {
-    "Truput Cobrado": { valor: 46, color: "green" },
-    "Gastos de Operacion por Cubrir": { valor: 54, color: "gray" },
+    "Truput Cobrado": { valor: 53, color: "green" },
+    "Gastos de Operacion por Cubrir": { valor: 47, color: "gray" },
 };
 
 var pastel = new nuevoId("canvas2", 400, 300, valores);
@@ -127,16 +127,11 @@ var ctx = document.getElementById("ProyectosEntregados");
 var myChart = new Chart(ctx, {
     type: "bar",
     data: {
-        labels: [ "L 03", "M 04", "W 05", "J 06", "V 07", "L 10", "M 11", "W 12", "J 13", "V 14", "L 17", "M 18", "W 19", "J 20", "V 21"  ],
+        labels: [  "L 10", "M 11", "W 12", "J 13", "V 14", "L 17", "M 18", "W 19", "J 20", "V 21", "L 24", "M 25", "W 26", "J 27", "V 28"  ],
         datasets: [
             {
                 label: "PROYECTOS ENTREGADOS",
                 data: [
-                    1,  /* L 03 */
-                    0,  /* M 04 */
-                    3,  /* W 05 */
-                    1,  /* J 06 */
-                    4,  /* V 07 */
                     1,  /* L 10 */
                     3,  /* M 11 */
                     2,  /* W 12 */
@@ -144,15 +139,13 @@ var myChart = new Chart(ctx, {
                     1,  /* V 14 */
                     0,  /* L 17 */
                     1,  /* M 18 */
-                    2,  /* M 19 */
-                    2,  /* M 20 */
+                    2,  /* W 19 */
+                    2,  /* J 20 */
+                    3,  /* V 21 */
+                    3,  /* L 24 */
+                    2,  /* M 25 */
                      ],
                 backgroundColor: [
-                                    "rgba(235, 248, 5, 0.3)",   // ROJO V 14
-                                    "rgba(57, 202, 36, 0.47) ",   // VERDE 04 11
-                                    "rgba(60, 255, 0, 0.45)",   // VERDE W 05
-                                    "rgba(235, 248, 5, 0.3)",   // ROJO V 14
-                                    "rgba(40, 202, 16, 0.55)",   // VERDE V 07
                                     "rgba(235, 248, 5, 0.3)",   // AMARILLO L 10
                                     "rgba(60, 255, 0, 0.45)",   // VERDE W 11
                                     "rgba(16, 255, 0, 0.3)",   // ROJO W 12
@@ -160,15 +153,13 @@ var myChart = new Chart(ctx, {
                                     "rgba(235, 248, 5, 0.3)",   // ROJO V 14
                                     "rgba(16, 255, 0, 0.3)",   // ROJO L 17
                                     "rgba(235, 248, 5, 0.3)",   // ROJO M 18
-                                    "rgba(16, 255, 0, 0.3)",   // ROJO J 13
-                                    "rgba(16, 255, 0, 0.3)",   // ROJO J 13
+                                    "rgba(16, 255, 0, 0.3)",   // ROJO J 19
+                                    "rgba(16, 255, 0, 0.3)",   // ROJO J 20
+                                    "rgba(60, 255, 0, 0.45)",   // VERDE W 05
+                                    "rgba(60, 255, 0, 0.45)",   // VERDE W 05
+                                    "rgba(16, 255, 0, 0.3)",   // ROJO W 12
                                   ],
                 borderColor: [ 
-                                    "rgba(235, 248, 5, 1)",   // ROJO V 14
-                                    "rgba(57, 202, 36, 1)",  // VERDE M 04
-                                    "rgba(16, 255, 0, 1)",   // VERDE W 05
-                                    "rgba(235, 248, 5, 1)",   // ROJO V 14
-                                    "rgba(40, 202, 16, 1)",   // VERDE V 07
                                     "rgba(235, 248, 5, 1)",   // AMARILO  L 10
                                     "rgba(16, 255, 0, 1)",   // VERDE M 11
                                     "rgba(16, 255, 0, 1)",   // ROJO W 12
@@ -178,6 +169,9 @@ var myChart = new Chart(ctx, {
                                     "rgba(235, 248, 5, 1)",   // ROJO M 18
                                     "rgba(16, 255, 0, 1)",   // ROJO J 13
                                     "rgba(16, 255, 0, 1)",   // ROJO J 13
+                                    "rgba(16, 255, 0, 1)",   // VERDE W 05
+                                    "rgba(60, 255, 0, 1)",   // VERDE W 05
+                                    "rgba(16, 255, 0, 1)",   // ROJO W 12
                     ],
                 borderWidth: 2,
             },
