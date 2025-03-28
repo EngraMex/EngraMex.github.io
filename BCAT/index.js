@@ -93,8 +93,8 @@ var nuevoId = function (canvasId, width, height, valores) {
 };
 
 var valores = {
-    "Truput Cobrado": { valor: 53, color: "green" },
-    "Gastos de Operacion por Cubrir": { valor: 47, color: "gray" },
+    "Truput Cobrado": { valor: 73, color: "green" },
+    "Gastos de Operacion por Cubrir": { valor: 27, color: "gray" },
 };
 
 var pastel = new nuevoId("canvas2", 400, 300, valores);
@@ -145,6 +145,8 @@ var myChart = new Chart(ctx, {
                     3,  /* L 24 */
                     2,  /* M 25 */
                     2,  /* M 26 */
+                    3,  /* L 27 */
+                    1,  /* M 28 */
                      ],
                 backgroundColor: [
                                     "rgba(235, 248, 5, 0.3)",   // AMARILLO L 10
@@ -160,6 +162,8 @@ var myChart = new Chart(ctx, {
                                     "rgba(60, 255, 0, 0.45)",   // VERDE W 05
                                     "rgba(16, 255, 0, 0.3)",   // ROJO W 12
                                     "rgba(16, 255, 0, 0.3)",   // ROJO W 12
+                                    "rgba(60, 255, 0, 0.45)",   // VERDE W 11
+                                    "rgba(235, 248, 5, 0.3)",   // ROJO M 18
                                   ],
                 borderColor: [ 
                                     "rgba(235, 248, 5, 1)",   // AMARILO  L 10
@@ -175,6 +179,8 @@ var myChart = new Chart(ctx, {
                                     "rgba(60, 255, 0, 1)",   // VERDE W 05
                                     "rgba(16, 255, 0, 1)",   // ROJO W 12
                                     "rgba(16, 255, 0, 1)",   // ROJO W 12
+                                    "rgba(60, 255, 0, 1)",   // VERDE W 11
+                                    "rgba(235, 248, 5, 1)",   // ROJO M 18
                     ],
                 borderWidth: 2,
             },
