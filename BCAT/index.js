@@ -93,8 +93,8 @@ var nuevoId = function (canvasId, width, height, valores) {
 };
 
 var valores = {
-    "Truput Cobrado": { valor: 73, color: "green" },
-    "Gastos de Operacion por Cubrir": { valor: 27, color: "gray" },
+    "Truput Cobrado": { valor: 74, color: "green" },
+    "Gastos de Operacion por Cubrir": { valor: 26, color: "gray" },
 };
 
 var pastel = new nuevoId("canvas2", 400, 300, valores);
@@ -127,7 +127,7 @@ var ctx = document.getElementById("ProyectosEntregados");
 var myChart = new Chart(ctx, {
     type: "bar",
     data: {
-        labels: [  "L 10", "M 11", "W 12", "J 13", "V 14", "L 17", "M 18", "W 19", "J 20", "V 21", "L 24", "M 25", "W 26", "J 27", "V 28"  ],
+        labels: [  "L 10", "M 11", "W 12", "J 13", "V 14", "L 17", "M 18", "W 19", "J 20", "V 21", "L 24", "M 25", "W 26", "J 27", "V 28", "L 31" ],
         datasets: [
             {
                 label: "PROYECTOS ENTREGADOS",
@@ -147,6 +147,7 @@ var myChart = new Chart(ctx, {
                     2,  /* M 26 */
                     3,  /* L 27 */
                     1,  /* M 28 */
+                    1,  /* M 31 */
                      ],
                 backgroundColor: [
                                     "rgba(235, 248, 5, 0.3)",   // AMARILLO L 10
@@ -163,6 +164,7 @@ var myChart = new Chart(ctx, {
                                     "rgba(16, 255, 0, 0.3)",   // ROJO W 12
                                     "rgba(16, 255, 0, 0.3)",   // ROJO W 12
                                     "rgba(60, 255, 0, 0.45)",   // VERDE W 11
+                                    "rgba(235, 248, 5, 0.3)",   // ROJO M 18
                                     "rgba(235, 248, 5, 0.3)",   // ROJO M 18
                                   ],
                 borderColor: [ 
@@ -181,13 +183,14 @@ var myChart = new Chart(ctx, {
                                     "rgba(16, 255, 0, 1)",   // ROJO W 12
                                     "rgba(60, 255, 0, 1)",   // VERDE W 11
                                     "rgba(235, 248, 5, 1)",   // ROJO M 18
+                                    "rgba(235, 248, 5, 1)",   // ROJO M 18
                     ],
                 borderWidth: 2,
             },
             {
                 type: "line",
                 label: "Objetivo diario",
-                data: new Array(15).fill(2),
+                data: new Array(16).fill(2),
                 borderColor: "rgba(14, 255, 0, 1)",
                 backgroundColor: "rgba(14, 255, 0, 0.2)",
                 fill: false,
@@ -195,7 +198,7 @@ var myChart = new Chart(ctx, {
             {
                 type: "line",
                 label: "Objetivo 2030",
-                data: new Array(15).fill(6),
+                data: new Array(16).fill(6),
                 borderColor: "rgba(39, 101, 245, 1)",
                 backgroundColor: "rgba(39, 101, 245, 0.2)",
                 fill: false,
