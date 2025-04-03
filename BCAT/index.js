@@ -93,8 +93,8 @@ var nuevoId = function (canvasId, width, height, valores) {
 };
 
 var valores = {
-    "Truput Cobrado": { valor: 74, color: "green" },
-    "Gastos de Operacion por Cubrir": { valor: 26, color: "gray" },
+    "Truput Cobrado": { valor: 0, color: "green" },
+    "Gastos de Operacion por Cubrir": { valor: 100, color: "gray" },
 };
 
 var pastel = new nuevoId("canvas2", 400, 300, valores);
@@ -127,63 +127,26 @@ var ctx = document.getElementById("ProyectosEntregados");
 var myChart = new Chart(ctx, {
     type: "bar",
     data: {
-        labels: [  "L 10", "M 11", "W 12", "J 13", "V 14", "L 17", "M 18", "W 19", "J 20", "V 21", "L 24", "M 25", "W 26", "J 27", "V 28", "L 31" ],
+        labels: [ "M 01", "W 02", "J 03", "V 04",
+                     "L 07", "M 08", "W 09", "J 10", "V 11", 
+                     "L 14", "M 15", "W 16", "J 17", "V 18", 
+                     /* "L 21", "M 22", "W 23", "J 24", "V 25", 
+                     "L 28","M 29", "W 30"*/ ],
         datasets: [
             {
                 label: "PROYECTOS ENTREGADOS",
                 data: [
-                    1,  /* L 10 */
-                    3,  /* M 11 */
-                    2,  /* W 12 */
-                    2,  /* J 13 */
-                    1,  /* V 14 */
-                    0,  /* L 17 */
-                    1,  /* M 18 */
-                    2,  /* W 19 */
-                    2,  /* J 20 */
-                    3,  /* V 21 */
-                    3,  /* L 24 */
-                    2,  /* M 25 */
-                    2,  /* M 26 */
-                    3,  /* L 27 */
-                    1,  /* M 28 */
-                    1,  /* M 31 */
+                    1, //W 1
+                    3, //J 3
+
                      ],
                 backgroundColor: [
                                     "rgba(235, 248, 5, 0.3)",   // AMARILLO L 10
                                     "rgba(60, 255, 0, 0.45)",   // VERDE W 11
-                                    "rgba(16, 255, 0, 0.3)",   // ROJO W 12
-                                    "rgba(16, 255, 0, 0.3)",   // ROJO J 13
-                                    "rgba(235, 248, 5, 0.3)",   // ROJO V 14
-                                    "rgba(16, 255, 0, 0.3)",   // ROJO L 17
-                                    "rgba(235, 248, 5, 0.3)",   // ROJO M 18
-                                    "rgba(16, 255, 0, 0.3)",   // ROJO J 19
-                                    "rgba(16, 255, 0, 0.3)",   // ROJO J 20
-                                    "rgba(60, 255, 0, 0.45)",   // VERDE W 05
-                                    "rgba(60, 255, 0, 0.45)",   // VERDE W 05
-                                    "rgba(16, 255, 0, 0.3)",   // ROJO W 12
-                                    "rgba(16, 255, 0, 0.3)",   // ROJO W 12
-                                    "rgba(60, 255, 0, 0.45)",   // VERDE W 11
-                                    "rgba(235, 248, 5, 0.3)",   // ROJO M 18
-                                    "rgba(235, 248, 5, 0.3)",   // ROJO M 18
                                   ],
                 borderColor: [ 
                                     "rgba(235, 248, 5, 1)",   // AMARILO  L 10
                                     "rgba(16, 255, 0, 1)",   // VERDE M 11
-                                    "rgba(16, 255, 0, 1)",   // ROJO W 12
-                                    "rgba(16, 255, 0, 1)",   // ROJO J 13
-                                    "rgba(235, 248, 5, 1)",   // ROJO V 14
-                                    "rgba(16, 255, 0, 1)",   // ROJO L 17
-                                    "rgba(235, 248, 5, 1)",   // ROJO M 18
-                                    "rgba(16, 255, 0, 1)",   // ROJO J 13
-                                    "rgba(16, 255, 0, 1)",   // ROJO J 13
-                                    "rgba(16, 255, 0, 1)",   // VERDE W 05
-                                    "rgba(60, 255, 0, 1)",   // VERDE W 05
-                                    "rgba(16, 255, 0, 1)",   // ROJO W 12
-                                    "rgba(16, 255, 0, 1)",   // ROJO W 12
-                                    "rgba(60, 255, 0, 1)",   // VERDE W 11
-                                    "rgba(235, 248, 5, 1)",   // ROJO M 18
-                                    "rgba(235, 248, 5, 1)",   // ROJO M 18
                     ],
                 borderWidth: 2,
             },
