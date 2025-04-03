@@ -136,16 +136,19 @@ var myChart = new Chart(ctx, {
             {
                 label: "PROYECTOS ENTREGADOS",
                 data: [
-                    1, //W 1
-                    3, //J 3
+                    1, //M 1
+                    3, //W 2
+                    2, //J 3
 
                      ],
                 backgroundColor: [
                                     "rgba(235, 248, 5, 0.3)",   // AMARILLO L 10
-                                    "rgba(60, 255, 0, 0.45)",   // VERDE W 11
+                                    "rgba(60, 255, 0, 0.5)",   // VERDE W 11
+                                    "rgba(60, 255, 0, 0.4)",   // VERDE W 11
                                   ],
                 borderColor: [ 
                                     "rgba(235, 248, 5, 1)",   // AMARILO  L 10
+                                    "rgba(16, 255, 0, 1)",   // VERDE M 11
                                     "rgba(16, 255, 0, 1)",   // VERDE M 11
                     ],
                 borderWidth: 2,
