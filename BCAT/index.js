@@ -93,8 +93,8 @@ var nuevoId = function (canvasId, width, height, valores) {
 };
 
 var valores = {
-    "Truput Cobrado": { valor: 10, color: "green" },
-    "Gastos de Operacion por Cubrir": { valor: 90, color: "gray" },
+    "Truput Cobrado": { valor: 25, color: "green" },
+    "Gastos de Operacion por Cubrir": { valor: 75, color: "gray" },
 };
 
 var pastel = new nuevoId("canvas2", 400, 300, valores);
@@ -141,21 +141,34 @@ var myChart = new Chart(ctx, {
                     2, //J 3
                     3, //V 4
                     2, //L 7
+                    4, //M 8
+                    4, //W 9
+                    1, //J 10
+                    2, //V 11
+                    0, //L 14
 
                      ],
                 backgroundColor: [
-                                    "rgba(235, 248, 5, 0.3)",   // AMARILLO L 10
-                                    "rgba(60, 255, 0, 0.5)",   // VERDE W 11
-                                    "rgba(60, 255, 0, 0.4)",   // VERDE W 11
-                                    "rgba(60, 255, 0, 0.5)",   // VERDE W 11
-                                    "rgba(60, 255, 0, 0.4)",   // VERDE W 11
+                                    "rgba(235, 248, 5, 0.3)",   // AMARILLO M 1
+                                    "rgba(60, 255, 0, 0.5)",   // VERDE W 2
+                                    "rgba(60, 255, 0, 0.4)",   // VERDE J 3
+                                    "rgba(60, 255, 0, 0.5)",   // VERDE V 4
+                                    "rgba(60, 255, 0, 0.4)",   // VERDE L 7
+                                    "rgba(54, 197, 10, 0.7)",   // VERDE M 8
+                                    "rgba(54, 197, 10, 0.7)",   // VERDE W 9
+                                    "rgba(235, 248, 5, 0.3)",   // AMARILLO J 10
+                                    "rgba(60, 255, 0, 0.4)",   // VERDE V 11
                                   ],
                 borderColor: [ 
-                                    "rgba(235, 248, 5, 1)",   // AMARILO  L 10
-                                    "rgba(16, 255, 0, 1)",   // VERDE M 11
-                                    "rgba(16, 255, 0, 1)",   // VERDE M 11
-                                    "rgba(16, 255, 0, 1)",   // VERDE M 11
-                                    "rgba(16, 255, 0, 1)",   // VERDE M 11
+                                    "rgba(235, 248, 5, 1)",   // AMARILLO M 1
+                                    "rgba(60, 255, 0, 1)",   // VERDE W 2
+                                    "rgba(60, 255, 0, 1)",   // VERDE J 3
+                                    "rgba(60, 255, 0, 1)",   // VERDE V 4
+                                    "rgba(60, 255, 0, 1)",   // VERDE L 7
+                                    "rgba(54, 197, 10, 1)",   // VERDE M 8
+                                    "rgba(54, 197, 10, 1)",   // VERDE W 9
+                                    "rgba(235, 248, 5, 1)",   // AMARILLO J 10
+                                    "rgba(60, 255, 0, 1)",   // VERDE V 11
                     ],
                 borderWidth: 2,
             },
