@@ -145,7 +145,7 @@ var myChart = new Chart(ctx, {
                     4, //W 9
                     1, //J 10
                     2, //V 11
-                    0, //L 14
+                    3, //L 14
 
                      ],
                 backgroundColor: [
@@ -158,6 +158,7 @@ var myChart = new Chart(ctx, {
                                     "rgba(54, 197, 10, 0.7)",   // VERDE W 9
                                     "rgba(235, 248, 5, 0.3)",   // AMARILLO J 10
                                     "rgba(60, 255, 0, 0.4)",   // VERDE V 11
+                                    "rgba(60, 255, 0, 0.5)",   // VERDE L 14
                                   ],
                 borderColor: [ 
                                     "rgba(235, 248, 5, 1)",   // AMARILLO M 1
@@ -169,6 +170,7 @@ var myChart = new Chart(ctx, {
                                     "rgba(54, 197, 10, 1)",   // VERDE W 9
                                     "rgba(235, 248, 5, 1)",   // AMARILLO J 10
                                     "rgba(60, 255, 0, 1)",   // VERDE V 11
+                                    "rgba(60, 255, 0, 1)",   // VERDE L 14
                     ],
                 borderWidth: 2,
             },
