@@ -68,26 +68,26 @@ line-height: 7rem;
 }
 
 .ayer {
--webkit-transform: rotate(90deg);
-      transform: rotate(90deg);
-background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, blue), color-stop(50%, rgba(0, 0, 250, 0.2)));
-background: linear-gradient(0deg, blue 50%, rgba(0, 0, 250, 0.2) 50%);
+-webkit-transform: rotate(130deg);
+      transform: rotate(130deg);
+background: -webkit-gradient(linear, left bottom, left top, color-stop(50%, orange), color-stop(50%, rgba(255, 168, 0, 0.2)));
+background: linear-gradient(0deg, orange 50%, rgba(255, 168, 0, 0.2) 50%);
 }
 .ayer:before, .ayer:after {
-color: blue;
+color: orange;
 }
 .ayer:before {
-content: "2 de 4";
+content: "3 de 4";
 background: white content-box;
--webkit-transform: rotate(-90deg);
-      transform: rotate(-90deg);
+-webkit-transform: rotate(-130deg);
+      transform: rotate(-130deg);
 }
 .ayer:after {
 content: "14/04/2024";
 background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
 background: linear-gradient(transparent 50%, white 50%);
--webkit-transform: scale(1.1) rotate(-90deg);
-      transform: scale(1.1) rotate(-90deg);
+-webkit-transform: scale(1.1) rotate(-130deg);
+      transform: scale(1.1) rotate(-130deg);
 }
 
 .hoy {
