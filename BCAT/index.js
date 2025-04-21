@@ -127,19 +127,14 @@ var ctx = document.getElementById("ProyectosEntregados");
 var myChart = new Chart(ctx, {
     type: "bar",
     data: {
-        labels: [    "M 01", "W 02", "J 03", "V 04",
-                     "L 07", "M 08", "W 09", "J 10", "V 11", 
+        labels: [    "L 07", "M 08", "W 09", "J 10", "V 11", 
                      "L 14", "M 15", "W 16", "J 17", "V 18", 
-                     /* "L 21", "M 22", "W 23", "J 24", "V 25", 
-                     "L 28","M 29", "W 30"*/ ],
+                     "L 21", "M 22", "W 23", "J 24", "V 25", 
+                     /*"L 28","M 29", "W 30"*/],
         datasets: [
             {
                 label: "PROYECTOS ENTREGADOS",
                 data: [
-                    1, //M 1
-                    3, //W 2
-                    2, //J 3
-                    3, //V 4
                     2, //L 7
                     4, //M 8
                     4, //W 9
@@ -148,13 +143,12 @@ var myChart = new Chart(ctx, {
                     3, //L 14
                     1, //M 15
                     2, //W 16
+                    0, //J 17
+                    0, //V 18
+                    2, //L 21
 
                      ],
                 backgroundColor: [
-                                    "rgba(235, 248, 5, 0.3)",   // AMARILLO M 1
-                                    "rgba(60, 255, 0, 0.5)",   // VERDE W 2
-                                    "rgba(60, 255, 0, 0.4)",   // VERDE J 3
-                                    "rgba(60, 255, 0, 0.5)",   // VERDE V 4
                                     "rgba(60, 255, 0, 0.4)",   // VERDE L 7
                                     "rgba(54, 197, 10, 0.7)",   // VERDE M 8
                                     "rgba(54, 197, 10, 0.7)",   // VERDE W 9
@@ -163,12 +157,10 @@ var myChart = new Chart(ctx, {
                                     "rgba(60, 255, 0, 0.5)",   // VERDE L 14
                                     "rgba(235, 248, 5, 0.3)",   // AMARILLO M 15
                                     "rgba(60, 255, 0, 0.4)",   // VERDE W 16
+                                    "rgba(60, 255, 0, 0.4)",   // VERDE W 16
+                                    "rgba(60, 255, 0, 0.4)",   // VERDE W 16
                                   ],
                 borderColor: [ 
-                                    "rgba(235, 248, 5, 1)",   // AMARILLO M 1
-                                    "rgba(60, 255, 0, 1)",   // VERDE W 2
-                                    "rgba(60, 255, 0, 1)",   // VERDE J 3
-                                    "rgba(60, 255, 0, 1)",   // VERDE V 4
                                     "rgba(60, 255, 0, 1)",   // VERDE L 7
                                     "rgba(54, 197, 10, 1)",   // VERDE M 8
                                     "rgba(54, 197, 10, 1)",   // VERDE W 9
@@ -176,6 +168,8 @@ var myChart = new Chart(ctx, {
                                     "rgba(60, 255, 0, 1)",   // VERDE V 11
                                     "rgba(60, 255, 0, 1)",   // VERDE L 14
                                     "rgba(235, 248, 5, 1)",   // AMARILLO M 15
+                                    "rgba(60, 255, 0, 1)",   // VERDE W 16
+                                    "rgba(60, 255, 0, 1)",   // VERDE W 16
                                     "rgba(60, 255, 0, 1)",   // VERDE W 16
                     ],
                 borderWidth: 2,
