@@ -93,8 +93,8 @@ var nuevoId = function (canvasId, width, height, valores) {
 };
 
 var valores = {
-    "Truput Cobrado": { valor: 3, color: "green" },
-    "Gastos de Operacion por Cubrir": { valor: 97, color: "gray" },
+    "Truput Cobrado": { valor: 29, color: "green" },
+    "Gastos de Operacion por Cubrir": { valor: 71, color: "gray" },
 };
 
 var pastel = new nuevoId("canvas2", 400, 300, valores);
@@ -144,6 +144,10 @@ var myChart = new Chart(ctx, {
                     1, //J 8
                     3, //V 9
                     3, //L 12
+                    3, //M 13
+                    1, //W 14
+                    2, //J 15
+                    2, //V 16
 
                      ],
                 backgroundColor: [
@@ -154,6 +158,10 @@ var myChart = new Chart(ctx, {
                                     "rgba(235, 248, 5, 0.4)",   // AMARILLO J 8
                                     "rgba(54, 197, 10, 0.4)",   // VERDE V 9
                                     "rgba(54, 197, 10, 0.4)",   // VERDE L 12
+                                    "rgba(54, 197, 10, 0.4)",   // VERDE M 13
+                                    "rgba(235, 248, 5, 0.4)",   // AMARILLO W 14
+                                    "rgba(60, 255, 0, 0.4)",   // VERDE J 15
+                                    "rgba(60, 255, 0, 0.4)",   // VERDE V 16
                                   ],
                 borderColor: [ 
                                     "rgba(60, 255, 0, 1)",   // VERDE V 2
@@ -163,6 +171,10 @@ var myChart = new Chart(ctx, {
                                     "rgba(235, 248, 5, 1)",   // AMARILLO J 8
                                     "rgba(54, 197, 10, 1)",   // VERDE V 9
                                     "rgba(54, 197, 10, 1)",   // VERDE L 12
+                                    "rgba(54, 197, 10, 1)",   // VERDE M 13
+                                    "rgba(235, 248, 5, 1)",   // AMARILLO W 14
+                                    "rgba(60, 255, 0, 1)",   // VERDE J 15
+                                    "rgba(60, 255, 0, 1)",   // VERDE V 16
                     ],
                 borderWidth: 2,
             },

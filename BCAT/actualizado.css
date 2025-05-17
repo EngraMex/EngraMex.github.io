@@ -83,7 +83,7 @@ background: white content-box;
       transform: rotate(-180deg);
 }
 .ayer:after {
-content: "12/05/2024";
+content: "19/05/2024";
 background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
 background: linear-gradient(transparent 50%, white 50%);
 -webkit-transform: scale(1.1) rotate(-180deg);
@@ -100,13 +100,13 @@ background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
 color: blue;
 }
 .hoy:before {
-content: "0 de 2";
+content: "0 de 1";
 background: white content-box;
 -webkit-transform: rotate(-0deg);
       transform: rotate(-0deg);
 }
 .hoy:after {
-content: "13/05/2024";
+content: "20/05/2024";
 background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
 background: linear-gradient(transparent 50%, white 50%);
 -webkit-transform: scale(1.1) rotate(-0deg);
@@ -129,7 +129,7 @@ background: white content-box;
       transform: rotate(-0deg);
 }
 .manana:after {
-content: "14/05/2024";
+content: "21/05/2024";
 background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
 background: linear-gradient(transparent 50%, white 50%);
 -webkit-transform: scale(1.1) rotate(-0deg);
@@ -146,13 +146,13 @@ background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
 color: blue;
 }
 .pasado:before {
-content: "0 de 1";
+content: "0 de 0";
 background: white content-box;
 -webkit-transform: rotate(-0deg);
       transform: rotate(-0deg);
 }
 .pasado:after {
-content: "15/05/2024";
+content: "22/05/2024";
 background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
 background: linear-gradient(transparent 50%, white 50%);
 -webkit-transform: scale(1.1) rotate(-0deg);
@@ -169,13 +169,13 @@ background: linear-gradient(0deg, blue 50%, rgba(0, 0, 255, 0.2) 50%);
 color: blue;
 }
 .pasadop:before {
-content: "0 de 3";
+content: "0 de 1";
 background: white content-box;
 -webkit-transform: rotate(-0deg);
       transform: rotate(-0deg);
 }
 .pasadop:after {
-content: "16/05/2024";
+content: "23/05/2024";
 background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
 background: linear-gradient(transparent 50%, white 50%);
 -webkit-transform: scale(1.1) rotate(-0deg);
@@ -198,7 +198,7 @@ background: white content-box;
       transform: rotate(-0deg);
 }
 .sem2:after {
-content: "12/05/2024";
+content: "26/05/2024";
 background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, transparent), color-stop(50%, white));
 background: linear-gradient(transparent 50%, white 50%);
 -webkit-transform: scale(1.1) rotate(-0deg);
