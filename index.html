@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engramex - Plan de Producción</title>
+    <link rel="stylesheet" href="actualizado.css">
+    <link rel="shortcut icon" href="logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Programa de Producción (Fecha Promesa)</h1>
+
+        <!-- Gráficos Circulares -->
+        <div class="skills nav-ajusted">
+            <div class="circular-progress ayer"></div>
+            <div class="circular-progress hoy"></div>
+            <div class="circular-progress manana"></div>
+            <div class="circular-progress pasado"></div>
+            <div class="circular-progress pasadop"></div>
+            <div class="circular-progress sem2"></div>
+        </div>
+
+        <h3 id="hide-table2">Órdenes Programadas de la Semana</h3>
+        
+        <div class="responsive-chart">
+            <div id="hide-table" class="pie animate nav-ajusted_mensual" style="--p:54;--c:ORANGE;">
+                Avance<br>Programa Producción<br>Mensual<br>15 de 28
+            </div>
+            <div class="circular-progress mensual"></div>
+        </div>
+
+        <!-- Contenedor para gráficos -->
+        <div class="CXP">
+            <canvas id="canvas2"></canvas>
+            <div id="leyenda2" class="leyenda"></div>
+        </div>  
+
+        <!-- Velocímetro -->
+        <div class="velocimetro-container">
+            <div class="velocimetro">
+                <div class="numeracion">
+                    <span>0</span><span></span><span>450</span><span></span><span>850</span><span></span>
+                    <span>1350</span><span></span><span>1800</span><span></span><span></span>
+                </div>
+                <div class="aguja" id="aguja"></div>
+            </div>
+        </div>
+
+        <!-- Control de Velocidad -->
+        <label for="velocidad">Velocidad de Flujo:</label>
+        <input type="number" id="velocidad" min="0" max="100" value="0" onchange="actualizarVelocidad(this.value)">
+        <div class="dias"><p>Dias Transcurridos: 16/21</p></div>
+
+        <!-- Tabla de Producción -->
+        <div class="table-container">
+            <table id="hide-table1" class="tableizer-table nav-ajusted_table">
+                <thead>
+                    <tr>
+                        <th>Fecha Promesa</th>
+                        <th>OP</th>
+                        <th>ODT</th>
+                        <th>Estado</th>
+                        <th>Amortiguador</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>Lunes-26-May</td><td>3437</td><td>7015</td><td class="BLUE">EN PRECESO</td><td class="AMORV"></td></tr>
+                    <tr><td>Martes-27-May</td><td>3408</td><td>6942 - 6945</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td></tr>
+                    <tr><td>Miercoles-28-May</td><td>3397</td><td>6923 - 6924</td><td class="GREEN">ENTREGADA</td><td class="AMORV"></td></tr>
+                    <tr><td>Jueves-29-May</td><td>3440</td><td>7022 - 7025</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td></tr>
+                    <tr><td>Viernes-30-May</td><td>3416</td><td>6998 - 6999</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td></tr>
+                    <tr><td>Viernes-30-May</td><td>3407</td><td>6998 - 6999</td><td class="BLUE">EN PROCESO</td><td class="AMORV"></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Gráficos de Proyectos Diarios -->
+        <section class="content">
+            <h4>PROYECTOS DIARIOS</h4>
+            <canvas id="ProyectosEntregados"></canvas>
+        </section>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
