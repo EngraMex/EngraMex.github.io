@@ -93,8 +93,8 @@ var nuevoId = function (canvasId, width, height, valores) {
 };
 
 var valores = {
-    "Truput Cobrado": { valor: 0, color: "green" },
-    "Gastos de Operacion por Cubrir": { valor: 100, color: "gray" },
+    "Truput Cobrado": { valor: 15, color: "green" },
+    "Gastos de Operacion por Cubrir": { valor: 85, color: "gray" },
 };
 
 var pastel = new nuevoId("canvas2", 400, 300, valores);
@@ -137,33 +137,28 @@ var myChart = new Chart(ctx, {
             {
                 label: "PROYECTOS ENTREGADOS",
                 data: [
+                        0, // L2
+                        3, // M3
+                        3, // W4
+                        2, // J5
+                        3, // V6
 
                      ],
                 backgroundColor: [
-                                    "rgba(10, 197, 26, 0.51)",   // VERDE L 12
-                                    "rgba(54, 197, 10, 0.4)",   // VERDE M 13
-                                    "rgba(235, 248, 5, 0.4)",   // AMARILLO W 14
-                                    "rgba(60, 255, 0, 0.4)",   // VERDE J 15
-                                    "rgba(60, 255, 0, 0.4)",   // VERDE V 16
-                                    "rgba(54, 197, 10, 0.4)",   // VERDE L 19
-                                    "rgba(54, 197, 10, 0.4)",   // VERDE M 20
-                                    "rgba(54, 197, 10, 0.4)",   // VERDE M 21
-                                    "rgba(54, 197, 10, 0.4)",   // VERDE L 22
-                                    "rgba(54, 197, 10, 0.4)",   // VERDE M 23
-                                    "rgba(28, 224, 11, 0.56)",   // VERDE L 26
+                                    "rgba(235, 8, 8, 0.51)",   // ROJO L 2
+                                    "rgba(54, 197, 10, 0.5)",   // VERDE M 3
+                                    "rgba(54, 197, 10, 0.5)",   // VERDE W 4
+                                    "rgba(79, 221, 36, 0.53)",   // VERDE J 5
+                                    "rgba(54, 197, 10, 0.5)",   // VERDE V 6
                                   ],
                 borderColor: [ 
-                                    "rgba(54, 197, 10, 1)",   // VERDE L 12
-                                    "rgba(54, 197, 10, 1)",   // VERDE M 13
-                                    "rgba(235, 248, 5, 1)",   // AMARILLO W 14
-                                    "rgba(60, 255, 0, 1)",   // VERDE J 15
-                                    "rgba(60, 255, 0, 1)",   // VERDE V 16
-                                    "rgba(54, 197, 10, 1)",   // VERDE L 19
-                                    "rgba(54, 197, 10, 1)",   // VERDE M 20
-                                    "rgba(54, 197, 10, 1)",   // VERDE M 21
-                                    "rgba(54, 197, 10, 1)",   // VERDE L 22
-                                    "rgba(54, 197, 10, 1)",   // VERDE M 23
-                                    "rgba(28, 224, 11, 1)",   // VERDE L 26
+                                    "rgba(235, 8, 8, 1)",   // ROJO L 2
+                                    "rgba(54, 197, 10, 1)",   // VERDE M 3
+                                    "rgba(54, 197, 10, 1)",   // VERDE w 4                                   
+                                    "rgba(79, 221, 36, 1)",   // VERDE J 5
+                                    "rgba(54, 197, 10, 1)",   // VERDE V 6
+
+
                     ],
                 borderWidth: 2,
             },
