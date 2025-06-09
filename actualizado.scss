@@ -1,0 +1,223 @@
+body{
+    margin: 0;
+    padding:0;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    background: #2C3E50 ;
+}
+
+h1{
+    text-align: center;
+    color: green
+}
+
+h2{
+    text-align: center;
+    color: #f83600;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
+
+
+.skills{
+    display: flex;
+    flex-wrap: initial;
+    box-flex: auto;
+    margin-top: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+.circular-progress{
+    &,
+    &:before,
+    &:after{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    }
+    margin: auto;
+
+    &:before,
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+        text-align: center;
+    }
+    &:before{        
+        padding: .5rem;
+        box-sizing: border-box;
+        font-size: 1rem;
+        line-height: 8rem;
+
+    }
+    &:after{
+        text-align: center;
+        font-size: 1.15rem;
+        line-height: 6.5rem;
+    }
+}
+
+@function progress($porcent){
+  $deg: $porcent/100 * 180;
+  @return #{$deg}deg;
+}
+
+@mixin circular-progress($porcent,$skill,$color,$bgcolor){
+    $progress: progress($porcent);
+    transform: rotate($progress);
+    position: relative;
+    background: linear-gradient(
+      0deg,
+      $color 50%,
+      rgba($color,.2) 50%
+    );
+    &:before,
+    &:after{
+        color: $color;
+        
+    }
+    &:before{        
+        content: "#{$porcent}%";
+        background: $bgcolor content-box;
+        transform: rotate(-#{$progress});
+    }
+    &:after{  
+        content: "#{$skill}";
+        text-transform: uppercase;     
+        background: linear-gradient(
+          transparent 50%,
+          $bgcolor 50%
+        ),;
+        transform: scale(1.1) rotate(-#{$progress});
+        
+    }
+}
+
+.ayer{
+    @include circular-progress(
+        40,
+        23/08/2022 d,
+        yellow,
+        #2C3E50
+     )
+}
+
+.hoy{
+    @include circular-progress(
+        50,
+        23/08/2022 d,
+        yellow,
+        #2C3E50
+    );
+}
+
+.manana{
+    @include circular-progress(
+        100, 
+        24/08/2022 d, 
+        red, 
+        #2C3E50
+    );
+}
+
+.pasado{
+    @include circular-progress(
+        0,
+        25/08/2022 d, 
+        red, 
+        #2C3E50
+    )
+}
+
+.pasadop{
+    @include circular-progress(
+        100,
+        26/08/2022 d,
+        green,
+        #2C3E50
+    )
+}
+
+table.tableizer-table {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #eee;
+  }
+
+.tableizer-table{
+    text-align: left;
+  margin-left: 1rem;
+  width: 82%;
+  border-spacing: .5rem;
+  background-color:#2C3E50
+}
+@property--p{
+    syntax: '<number>';
+    inherits: true;
+    initial-value: 0;
+  } 
+  /* grosor ind mensual*/
+  .pie {
+    text-transform: uppercase;
+    text-align: center;
+    --p:20;
+    /*grosor*/
+    --b:16px;
+    /*cicunferencia*/
+    --w:160px;
+    
+    width:var(--w);
+    aspect-ratio:1;
+    position:relative;
+    display:inline-grid;
+    margin:2px;
+    place-content:center;
+    /*letra*/
+    font-size:18px;
+    font-weight:bold;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .pie:before,.pie:after {
+    content:"";
+    position:absolute;
+    border-radius:50%;
+  }
+  
+  .pie:before {
+    inset:0;
+    background:
+      radial-gradient(farthest-side,var(--c) 98%,#0000) top/var(--b) var(--b) no-repeat,
+      conic-gradient(var(--c) calc(var(--p)*1%),#0000 0);
+    -webkit-mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+            mask:radial-gradient(farthest-side,#0000 calc(99% - var(--b)),#000 calc(100% - var(--b)));
+  }
+  .pie:after {
+    inset:calc(50% - var(--b)/2);
+    background:var(--c);
+    transform:rotate(calc(var(--p)*3.6deg)) translateY(calc(50% - var(--w)/2));
+  }
+  .animate {
+    animation:p 1s .5s both;
+    color:#eee;
+  }
+  @keyframes p {
+    from{--p:0}
+  } 
+  
+  .nav-ajusted{
+    max-width: 1200px;
+    margin-top: -0.5rem;
+    margin-bottom: -1rem;
+  }
+  
+  .nav-ajusted_table{
+    max-width: 1200px;
+    margin-top: -15rem;
+  }
+  
+  .nav-ajusted_mensual{
+    max-width: 992px;
+    margin-left: 75rem;
+    margin-top: -14rem;
+  }
